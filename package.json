@@ -1,0 +1,27 @@
+{
+  "name": "www.blissfestri.com",
+  "version": "0.0.1",
+  "description": "Website for Blissfest",
+  "author": "Owen Buckley <owen@thegreenhouse.io>",
+  "homepage": "https://github.com/AnalogStudiosRI/www.blissfestri.com#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnalogStudiosRI/www.blissfestri.com.git"
+  },
+  "keywords": [
+    "Blissfest",
+    "Analog Studios",
+    "Rhode Island"
+  ],
+  "scripts": {
+    "clean": "rm -rf public",
+    "develop": "greenwood develop",
+    "build": "npm run clean && greenwood build",
+    "serve": "npm run clean && greenwood serve",
+    "start": "npm run develop"
+  },
+  "dependencies": {
+    "@greenwood/cli": "^0.28.0-alpha.0"
+  }
+}

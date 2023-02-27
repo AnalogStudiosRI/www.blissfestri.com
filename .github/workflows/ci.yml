@@ -26,9 +26,9 @@ jobs:
     - name: Test
       run: |
         npm run test
-    # - name: Build Storybook
-    #   run: |
-    #     yarn story:build
+    - name: Build Storybook
+      run: |
+        yarn story:build
     - name: Build Project
       run: |
         npm run build

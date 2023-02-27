@@ -2,6 +2,7 @@
   "name": "www.blissfestri.com",
   "version": "0.0.1",
   "description": "Website for Blissfest",
+  "type": "module",
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "homepage": "https://github.com/AnalogStudiosRI/www.blissfestri.com#readme",
   "license": "ISC",
@@ -15,13 +16,47 @@
     "Rhode Island"
   ],
   "scripts": {
-    "clean": "rm -rf public",
-    "develop": "greenwood develop",
-    "build": "npm run clean && greenwood build",
-    "serve": "npm run clean && greenwood serve",
-    "start": "npm run develop"
+    "dev": "greenwood develop",
+    "build": "NODE_ENV=production greenwood build",
+    "serve": "NODE_ENV=production greenwood serve",
+    "story:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "story:build": "cross-env NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "story:serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider build-storybook && http-server ./storybook-static",
+    "test": "wtr",
+    "test:tdd": "yarn test --watch",
+    "lint": "ls-lint && yarn lint:js && yarn lint:css",
+    "lint:js": "eslint \"*.{js,cjs,.mjs}\" \".storybook/*.{js,cjs}\" \"src/**/**/*.js\"",
+    "lint:css": "stylelint \"./src/**/*.js\", \"./src/**/*.css\"",
+    "clean": "rimraf public/ .greenwood/ ./storybook-static"
   },
-  "dependencies": {
-    "@greenwood/cli": "^0.28.0-alpha.0"
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@esm-bundle/chai": "^4.3.4",
+    "@greenwood/cli": "~0.28.0-alpha.3",
+    "@greenwood/plugin-postcss": "~0.28.0-alpha.3",
+    "@ls-lint/ls-lint": "^1.10.0",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/web-components": "^6.5.10",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@web/test-runner": "^0.13.13",
+    "@web/test-runner-junit-reporter": "^0.4.4",
+    "@web/test-runner-puppeteer": "^0.10.0",
+    "autoprefixer": "^9.8.8",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.23.0",
+    "http-server": "^14.1.1",
+    "lit-html": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "string-replace-loader": "^2.3.0",
+    "stylelint": "^13.8.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

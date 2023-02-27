@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Overview/Integrations" />
+
+## Overview
+
+A few of the components and pages in this project leverage data and services from external sources.
+
+### YouTube
+
+As the name implies, a YouTube playlist for Tuesday's Tunes is displayed inside an `<iframe>` as part of the **YouTubePlaylist** component.
+
+Here is a link to the [technical documentation](https://developers.google.com/youtube/player_parameters).
+
+### Spotify
+
+As the name implies, a Spotify playlist for Tuesday's Tunes is displayed inside an `<iframe>` as part of the **SpotifyPlaylist** component.
+
+Here is a link to the [technical documentation](https://developer.spotify.com/documentation/embeds/guides/using-the-iframe-api/).
+
+### Contentful
+A headless CMS, [Contentful](https://www.contentful.com) powers all the (event) content for the main [Analog Studios website](https://www.analogstudios.net), including events for Tuesday's Tunes.  For this project, we fetch those events and only display the ones relevant to Tuesday's Tunes and displayed by the **UpcomingEvents** component.
+
+Since this content is dynamic, it is fetched at the page level, and whenever this content is updated in the CMS, a webhook will fire to Netlify to re-build the TT website.
+
+### Netlify
+For hosting, [Netlify](https://www.netlify.com) is used to build the project on code change in GitHub, or listen for any relevant webhooks, like from Contentful.

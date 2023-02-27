@@ -1,0 +1,34 @@
+name: Continuous Integration
+
+on: [pull_request]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node: [18]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+    - name: Installing project dependencies
+      run: |
+        npm ci
+    - name: Lint
+      run: |
+        npm run lint
+    - name: Test
+      run: |
+        npm run test
+    # - name: Build Storybook
+    #   run: |
+    #     yarn story:build
+    - name: Build Project
+      run: |
+        npm run build

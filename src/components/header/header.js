@@ -1,8 +1,8 @@
 export default class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <header>
-        <h1>Welcome to Blissfest!</h1>
+      <header style="background-color: var(--color-primary)">
+        <h1 style="color: var(--color-secondary)">Welcome to Blissfest!</h1>
       </header>
     `;
   }

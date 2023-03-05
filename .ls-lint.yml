@@ -13,4 +13,8 @@ ls:
 
 ignore: 
   - .git 
+  - .greenwood
   - node_modules
+  - storybook-static
+  - report
+  - public

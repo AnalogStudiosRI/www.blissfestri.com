@@ -5,9 +5,9 @@ const config = {
     name: '@storybook/addon-postcss',
     options: {
       postcssLoaderOptions: {
-        implementation: require('postcss'),
-      },
-    },
+        implementation: require('postcss')
+      }
+    }
   }],
   framework: {
     name: '@storybook/web-components-webpack5',

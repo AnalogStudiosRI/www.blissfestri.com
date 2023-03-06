@@ -2,23 +2,21 @@
 module.exports = {
   purge: ['./src/**/*.{html,js}'],
   mode: 'jit',
-  // theme: {
-  //   extend: {
-  //     colors: {
-  //       gray: {
-  //         bf: '#72674c'
-  //       },
-  //       black: {
-  //         bf: '#020202'
-  //       },
-  //       orange: {
-  //         bf: '#ef9d00'
-  //       }
-  //     },
-  //     fontFamily: {
-  //       title: ['"Cooper Black"']
-  //     }
-  //   }
-  // },
+  theme: {
+    extend: {
+      colors: {
+        primary: '#189992',
+        secondary: '#60f1ac',
+        accent: '##f66',
+        white: '#efefef',
+        black: '#020202',
+        gray: '#72674c'
+      },
+      fontFamily: {
+        'primary': ['Montserrat', 'sans-serif'],
+        'secondary': ['Citrus Gothic', 'sans-serif']
+      }
+    }
+  },
   plugins: []
 };

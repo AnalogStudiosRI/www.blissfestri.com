@@ -3,6 +3,7 @@
 body {
   background-color: var(--color-white);
   margin: 0 auto;
+  font-family: var(font-primary);
 }
 
 h1 {

@@ -5,18 +5,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: {
-          tt: '#72674c'
-        },
-        black: {
-          tt: '#020202'
-        },
-        orange: {
-          tt: '#ef9d00'
-        }
+        primary: '#189992',
+        secondary: '#60f1ac',
+        accent: '##f66',
+        white: '#efefef',
+        black: '#020202',
+        gray: '#72674c'
       },
       fontFamily: {
-        title: ['"Cooper Black"']
+        'primary': ['Montserrat', 'sans-serif'],
+        'secondary': ['Citrus Gothic', 'sans-serif']
       }
     }
   },

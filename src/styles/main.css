@@ -1,8 +1,9 @@
 @import './theme.css';
 
 body {
-  background-color: cornflowerblue;
+  background-color: var(--color-white);
   margin: 0 auto;
+  font-family: var(font-primary);
 }
 
 h1 {

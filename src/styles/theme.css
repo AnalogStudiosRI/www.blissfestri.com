@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/montserrat-regular.ttf') format('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Citrus Gothic';
+  src: url('../assets/fonts/citrus-gothic-rough-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root,
+:host {
+  --color-primary: #189992;
+  --color-secondary: #60f1ac;
+  --color-accent: #f66;
+  --color-white: #efefef;
+  --color-black: #020202;
+  --color-gray: #72674c;
+  --font-primary: 'Montserrat';
+  --font-secondary: 'Citrus Gothic';
+}

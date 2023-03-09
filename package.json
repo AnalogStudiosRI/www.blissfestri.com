@@ -17,8 +17,8 @@
   ],
   "scripts": {
     "dev": "greenwood develop",
-    "build": "NODE_ENV=production greenwood build",
-    "serve": "NODE_ENV=production greenwood serve",
+    "build": "greenwood build",
+    "serve": "greenwood serve",
     "story:dev": "storybook dev -p 6006",
     "story:build": "storybook build",
     "story:serve": "storybook build && http-server ./storybook-static",

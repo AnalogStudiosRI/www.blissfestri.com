@@ -17,10 +17,12 @@ describe('Components/Header', () => {
       expect(header.querySelectorAll('header').length).equal(1);
     });
 
-    it('should have the expected heading text', () => {
+    it('should have the expected heading content', () => {
       const heading = document.getElementsByTagName('h1')[0];
+      const edge = document.getElementsByTagName('img')[0];
 
       expect(heading.textContent).to.equal('Welcome to Blissfest!');
+      expect(edge).not.equal(undefined);
     });
   });
 

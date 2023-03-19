@@ -31,12 +31,20 @@ import { Meta } from '@storybook/addon-docs';
       background-color: var(--color-accent);
     }
 
+    .palette-tertiary {
+      background-color: var(--color-tertiary);
+    }
+
     .palette-white {
       background-color: var(--color-white);
     }
 
     .palette-black {
       background-color: var(--color-black);
+    }
+
+    .typography {
+      font-size: 1.4rem;
     }
 
     .typography-primary {
@@ -73,7 +81,14 @@ The following theme colors available are:
 
 ### `--color-accent`
 
+> _Guidelines_
+> - Should not be used for small text on white backgrounds
+
 <span class="palette-box palette-accent"></span>
+
+### `--color-tertiary`
+
+<span class="palette-box palette-tertiary"></span>
 
 ### `--color-white`
 
@@ -89,11 +104,11 @@ The following font families available are:
 
 ### Montserrat Regular
 
-<span class="typography-primary">The quick brown fox jumped over the lazy dog.</span>
+<span class="typography typography-primary">The quick brown fox jumped over the lazy dog.</span>
 
 ### Citrus Gothic Rough Regular
 
-<span class="typography-secondary">The quick brown fox jumped over the lazy dog.</span>
+<span class="typography typography-secondary">The quick brown fox jumped over the lazy dog.</span>
 
 ## Design System
 

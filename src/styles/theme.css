@@ -16,9 +16,10 @@
 
 :root,
 :host {
-  --color-primary: #189992;
-  --color-secondary: #60f1ac;
-  --color-accent: #f66;
+  --color-primary: #026769;
+  --color-secondary: #60eda8;
+  --color-accent: #ff5c5c;
+  --color-tertiary: #fcc;
   --color-white: #efefef;
   --color-black: #020202;
   --color-gray: #72674c;

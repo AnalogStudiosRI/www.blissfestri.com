@@ -2,14 +2,14 @@ export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="bg-no-repeat min-h-screen font-secondary"
-        style="background-image:url('/assets/images/ri-map.webp'); padding-left: 30%; width:60%;"
+        class="bg-no-repeat h-60 font-secondary"
+        style="height: 900px; width: 900px; background-image:url('/assets/images/ri-map.webp'); padding-left: min(460px);"
       >
 
         <h1
           class="text-accent text-6xl text-center"
         >
-          <span class="flex flex-nowrap justify-between">
+          <span class="flex flex-nowrap justify-between pt-4 pb-4">
             <span>R</span>
             <span>h</span>
             <span>o</span>
@@ -38,7 +38,7 @@ export default class EventDetails extends HTMLElement {
             <span>i</span>
             <span>c</span>
           </span>
-          <span class="flex flex-nowrap pl-60 w-60 justify-evenly text-8xl">
+          <span class="flex flex-nowrap pl-72 w-60 justify-evenly text-8xl pt-4 pb-4">
             <span>F</span>
             <span>e</span>
             <span>s</span>
@@ -50,14 +50,12 @@ export default class EventDetails extends HTMLElement {
           </span>
         </h1>
 
-        <h2 class="text-primary text-6xl m-2">
-          7 &dot; 29 &dot; 2023
+        <h2 class="text-primary text-6xl pb-2 pl-44">
+          <span flex-flex-nowrap>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 
-          class="text-primary text-6xl m-2"
-        >
-          5:00pm to 11:00pm
+        <h2 class="text-accent text-4xl m-2 pl-44">
+          <span>5:00pm to 11:00pm<span>
         </h2>
 
       </div>

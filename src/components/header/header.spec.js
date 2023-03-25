@@ -17,10 +17,11 @@ describe('Components/Header', () => {
       expect(header.querySelectorAll('header').length).equal(1);
     });
 
-    it('should have the expected heading text', () => {
-      const heading = document.getElementsByTagName('h1')[0];
+    it('should have the expected banner image with alt text', () => {
+      const bannerImage = document.querySelectorAll('header img');
 
-      expect(heading.textContent).to.equal('Welcome to Blissfest!');
+      expect(bannerImage.length).to.equal(1);
+      expect(bannerImage[0].getAttribute('alt')).to.equal('Blissfest logo');
     });
   });
 

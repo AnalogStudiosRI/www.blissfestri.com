@@ -3,7 +3,7 @@ export default class SignupForm extends HTMLElement {
     this.innerHTML = `
       <div class="bg-primary p-3 text-center m-4" id="signup_form">
         <img
-          src="assets/images/Message_Bottle.png"
+          src="assets/images/Message-Bottle.png"
           alt="popped open bottle with music sheet"
           loading="lazy"
         />
@@ -55,7 +55,7 @@ export default class SignupForm extends HTMLElement {
             rel="noopener"
           >
             <img
-              src="assets/images/FB_Icon.png"
+              src="assets/images/FB-Icon.png"
               alt="Facebook Page"
               width="40"
               loading="lazy"
@@ -68,7 +68,7 @@ export default class SignupForm extends HTMLElement {
             rel="noopener"
           >
             <img
-              src="assets/images/YT_Icon.png"
+              src="assets/images/YT-Icon.png"
               alt="YouTube Page"
               width="40"
               loading="lazy"
@@ -81,7 +81,7 @@ export default class SignupForm extends HTMLElement {
             rel="noopener"
           >
             <img
-              src="assets/images/INSTA_Icon.png"
+              src="assets/images/INSTA-Icon.png"
               alt="Instagram Page"
               width="40"
               loading="lazy"

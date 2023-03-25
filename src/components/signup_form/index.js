@@ -2,7 +2,11 @@ export default class SignupForm extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="bg-primary p-3 text-center m-4" id="signup_form">
-        <img src="assets/images/bottle.png" alt="popped open bottle with music sheet" />
+        <img
+          src="assets/images/Message_Bottle.png"
+          alt="popped open bottle with music sheet"
+          loading="lazy"
+        />
         <h2
           class="text-secondary text-3xl font-primary text-secondary uppercase mt-4 mb-4 w-2/3 m-auto"
           >
@@ -43,7 +47,47 @@ export default class SignupForm extends HTMLElement {
             Sign Me Up
           </button>
         </form>
-        <p class="mt-8">Social bar TK</p>
+        <div class="flex gap-x-4 justify-center mb-4 mt-8">
+          <a
+            href="https://facebook.com"
+            aria-label="facbook page"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/images/FB_Icon.png"
+              alt="Facebook Page"
+              width="40"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://youtube.com"
+            aria-label="youtube page"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/images/YT_Icon.png"
+              alt="YouTube Page"
+              width="40"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://instagram.com"
+            aria-label="instagram page"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/images/INSTA_Icon.png"
+              alt="Instagram Page"
+              width="40"
+              loading="lazy"
+            />
+          </a>
+        </div>
         <small class="text-white">©Analog Studios. All Rights Reserved.</small>
       </div>
     `;

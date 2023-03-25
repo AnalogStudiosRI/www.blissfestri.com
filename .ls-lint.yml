@@ -1,20 +1,23 @@
 ls:
-  .js: lowercase
-  .json: lowercase
-  .css: lowercase
-  .html: lowercase
-  .ico: lowercase
-  .jpg: lowercase
-  .png: lowercase
-  .svg: lowercase
-  .tff: lowercase
-  .woff: lowercase
-  .woff2: lowercase
+  .config.js: kebabcase
+  .spec.js: kebabcase
+  .stories.js: kebabcase
+  .js: kebabcase
+  .json: kebabcase
+  .css: kebabcase
+  .html: kebabcase
+  .ico: kebabcase
+  .jpg: kebabcase
+  .png: kebabcase
+  .svg: kebabcase
+  .tff: kebabcase
+  .woff: kebabcase
+  .woff2: kebabcase
 
 ignore: 
-  - .git 
+  - .git
   - .greenwood
   - node_modules
-  - storybook-static
-  - report
   - public
+  - reports
+  - storybook-static

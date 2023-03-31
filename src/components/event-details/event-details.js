@@ -2,7 +2,7 @@ export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="bg-no-repeat h-60"
+        class="bg-no-repeat h-60 event-details"
         style="height: 900px; width: 900px; background-image:url('/assets/images/ri-map.webp'); padding-left: min(460px);"
       >
 
@@ -59,23 +59,23 @@ export default class EventDetails extends HTMLElement {
         </h2>
 
         <div class="pl-32 pt-40">
-          <div class="flex">
+          <div class="flex location">
             <div class="w-2/5">
               <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo">
             </div>
-            <div class="pl-4">
+            <div class="pl-4 content">
               <h3 class="text-accent text-2xl font-secondary">Restoration Hall</h3>
               <h4 class="text-primary italic text-xl">449 Thames Street</h4>
               <h4 class="text-primary italic text-xl">Newport&#44; RI 02840</h4>
             </div>
           </div>
 
-          <div class="flex pt-8">
+          <div class="flex pt-8 presenter">
             <div class="w-2/5">
               <img src="/assets/images/analog-studios-logo.webp" alt="Analog Studios logo">
             </div>
-            <div class="pl-4">
-              <h4 class="text-primary pt-4 text-xl">Presented by</h4>
+            <div class="pl-4 content">
+              <h3 class="text-primary pt-4 text-xl">Presented by</h3>
               <h4 class="text-primary text-xl underline">
                 <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
               </h4>

@@ -1,11 +1,11 @@
 import { expect } from '@esm-bundle/chai';
-import './index.js';
+import './signup-form.js';
 
 describe('Components/Signup Form', () => {
   let form;
 
   before(async () => {
-    form = document.createElement('bf-signup_form');
+    form = document.createElement('bf-signup-form');
     document.body.appendChild(form);
 
     await form.updateComplete;
@@ -28,13 +28,13 @@ describe('Components/Signup Form', () => {
       expect(image.alt).to.equal('popped open bottle with music sheet');
       expect(heading.textContent.trim()).to.equal('Stay in Touch!');
       expect(tagLine.textContent.trim()).to.equal(
-        'Subscribe to stay up to date on this summer\'s upcomming music festivities!'
+        'Subscribe to stay up to date for this summer\'s upcoming music festivities!'
       );
       expect(lables[0].textContent.trim()).to.equal('Name (optional)');
       expect(lables[1].textContent.trim()).to.equal('Email Address');
       expect(button.textContent.trim()).to.equal('Sign Me Up');
       expect(copyright.textContent).to.equal(
-        '©Analog Studios. All Rights Reserved.'
+        'Copyright © Analog Studios. All Rights Reserved.'
       );
     });
   });

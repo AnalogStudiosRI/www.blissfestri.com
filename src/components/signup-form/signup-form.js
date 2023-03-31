@@ -58,7 +58,7 @@ export default class SignupForm extends HTMLElement {
             class="ml-2 mr-2"
           >
             <img
-              src="/assets/images/fb-icon.png"
+              src="/assets/images/facebook-icon.png"
               alt="Analog Studios Facebook page"
               width="20"
               loading="lazy"
@@ -71,7 +71,7 @@ export default class SignupForm extends HTMLElement {
             class="ml-2 mr-2"
           >
             <img
-              src="/assets/images/yt-icon.png"
+              src="/assets/images/youtube-icon.png"
               alt="Analog Studios YouTube page"
               width="20"
               loading="lazy"
@@ -84,7 +84,7 @@ export default class SignupForm extends HTMLElement {
             class="ml-2 mr-2"
           >
             <img
-              src="/assets/images/insta-icon.png"
+              src="/assets/images/instagram-icon.png"
               alt="Dave Flamand Instagram page"
               width="20"
               loading="lazy"
@@ -97,4 +97,4 @@ export default class SignupForm extends HTMLElement {
   }
 }
 
-customElements.define('bf-signup_form', SignupForm);
+customElements.define('bf-signup-form', SignupForm);

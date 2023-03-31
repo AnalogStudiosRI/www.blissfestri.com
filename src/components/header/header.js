@@ -4,7 +4,6 @@ export default class Header extends HTMLElement {
       <header class="bg-primary">
         <h1 class="text-secondary font-secondary text-center">Welcome to Blissfest!</h1>
       </header>
-      <img src="/assets/images/top-banner.png" alt="" class="w-full" />
     `;
   }
 }

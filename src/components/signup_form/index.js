@@ -1,24 +1,27 @@
 export default class SignupForm extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <div class="bg-primary p-3 text-center m-4" id="signup_form">
+      <div
+        id="signup-form"
+        class="bg-primary p-1 text-center m-4 max-w-xs">
         <img
-          src="assets/images/message-bottle.png"
+          src="/assets/images/message-bottle.png"
           alt="popped open bottle with music sheet"
+          class="inline-block w-32"
           loading="lazy"
         />
         <h2
-          class="text-secondary text-3xl font-primary text-secondary uppercase mt-4 mb-4 w-2/3 m-auto"
+          class="text-secondary text-4xl font-primary font-bold uppercase mt-4 mb-4"
           >
             Stay in Touch!
           </h2>
         <p
-          class="text-white mb-6 w-3/4 m-auto"
+          class="text-white mb-6 m-auto"
         >
-            Subscribe to stay up to date on this summer's upcomming music festivities!
+            Subscribe to stay up to date for this summer's upcoming music festivities!
         </p>
         <form
-          name="contact"
+          name="sign-up"
           method="POST"
           data-netlify="true"
           class="width-full flex flex-col gap-4"
@@ -47,48 +50,48 @@ export default class SignupForm extends HTMLElement {
             Sign Me Up
           </button>
         </form>
-        <div class="flex gap-x-4 justify-center mb-4 mt-8">
+        <div class="flex gap-x-4 justify-center mb-1 mt-20">
           <a
-            href="https://facebook.com"
-            aria-label="facbook page"
+            href="https://www.facebook.com/analogstudiosri/"
+            aria-label="Analog Studios Facebook page"
             target="_blank"
-            rel="noopener"
+            class="ml-2 mr-2"
           >
             <img
-              src="assets/images/fb-icon.png"
-              alt="Facebook Page"
-              width="40"
+              src="/assets/images/fb-icon.png"
+              alt="Analog Studios Facebook page"
+              width="20"
               loading="lazy"
             />
           </a>
           <a
-            href="https://youtube.com"
-            aria-label="youtube page"
+            href="https://www.youtube.com/channel/UCxs5mxoDpmmR0hRbwsxU7Sg/"
+            aria-label="Analog Studios YouTube page"
             target="_blank"
-            rel="noopener"
+            class="ml-2 mr-2"
           >
             <img
-              src="assets/images/yt-icon.png"
-              alt="YouTube Page"
-              width="40"
+              src="/assets/images/yt-icon.png"
+              alt="Analog Studios YouTube page"
+              width="20"
               loading="lazy"
             />
           </a>
           <a
-            href="https://instagram.com"
-            aria-label="instagram page"
+            href="https://www.instagram.com/dave.flamand/"
+            aria-label="Dave Flamand Instagram page"
             target="_blank"
-            rel="noopener"
+            class="ml-2 mr-2"
           >
             <img
-              src="assets/images/insta-icon.png"
-              alt="Instagram Page"
-              width="40"
+              src="/assets/images/insta-icon.png"
+              alt="Dave Flamand Instagram page"
+              width="20"
               loading="lazy"
             />
           </a>
         </div>
-        <small class="text-white">©Analog Studios. All Rights Reserved.</small>
+        <small class="text-white text-xs">Copyright &copy; Analog Studios. All Rights Reserved.</small>
       </div>
     `;
   }

@@ -30,7 +30,7 @@ export default class SignupForm extends HTMLElement {
             Name (optional)
             <input
               type="text"
-              class="w-full p-2 rounded-lg"
+              class="w-full p-2 rounded-lg text-black"
               name="name"
             />
           </label>
@@ -39,7 +39,7 @@ export default class SignupForm extends HTMLElement {
             <input
               type="email"
               name="email"
-              class="w-full p-2 rounded-lg"
+              class="w-full p-2 rounded-lg text-black"
               required
             />
           </label>

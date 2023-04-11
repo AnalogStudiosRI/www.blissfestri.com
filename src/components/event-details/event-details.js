@@ -49,28 +49,28 @@ export default class EventDetails extends HTMLElement {
           </span>
         </h1>
 
-        <h2 class="text-primary font-secondary sm:text-4xl sm:pl-96 sm:ml-8 sm:pt-2 md:pt-4 md:text-5xl md:pl-80 md:ml-36 md:mt-1 lg:text-5xl lg:pl-96 lg:ml-32">
+        <h2 class="text-primary font-secondary sm:text-4xl sm:pl-96 sm:ml-8 sm:pt-2 md:pt-4 md:text-5xl md:pl-80 md:ml-36 md:mt-1 lg:text-5xl lg:pl-96 lg:ml-40">
           <span>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 class="text-accent font-secondary sm:text-3xl sm:pl-80 sm:ml-16 sm:mt-2 md:text-4xl md:pl-80 md:mt-2 md:ml-28 lg:text-4xl lg:pl-96 lg:ml-28">
+        <h2 class="text-accent font-secondary sm:text-3xl sm:pl-80 sm:ml-16 sm:mt-2 md:text-4xl md:pl-80 md:mt-2 md:ml-28 lg:text-5xl lg:pl-96 lg:ml-24">
           <span>5:00pm to 11:00pm<span>
         </h2>
 
-        <div class="sm:pl-80 sm:pt-20 sm:mt-4 md:pl-76 md:ml-12 md:pt-8 md:mt-4 lg:pl-96">
+        <div class="sm:pl-80 sm:pt-20 sm:mt-3 md:pl-76 md:ml-12 md:pt-8 md:mt-4 lg:pl-96 lg:mt-8">
           <div class="flex location">
-            <div class="sm:mr-2 sm:w-1/3 md:w-1/3 lg:w-2/4">
+            <div class="position-relative z-10 sm:mr-2 sm:w-1/3 md:w-1/3 lg:w-2/5 lg:mr-0">
               <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo">
             </div>
             <div class="content">
-              <h3 class="text-accent font-secondary sm:text-2xl md:text-3xl lg:text-2xl">Restoration Hall</h3>
-              <h4 class="text-primary italic text-xl md:text-2xl">449 Thames Street</h4>
+              <h3 class="text-accent font-secondary sm:text-2xl md:text-3xl lg:text-3xl">Restoration Hall</h3>
+              <h4 class="text-primary italic text-xl md:text-2xl lg:-text-lg">449 Thames Street</h4>
               <h4 class="text-primary italic text-xl md:text-2xl">Newport&#44; RI</h4>
             </div>
           </div>
 
           <div class="flex sm:pt-4 presenter">
-            <div class="sm:w-1/3 mr-2 md:w-1/3 lg:w-2/4">
+            <div class="sm:w-1/3 mr-2 md:w-1/3 lg:w-2/5 lg:m2-4">
               <img src="/assets/images/analog-studios-logo.webp" alt="Analog Studios logo">
             </div>
             <div class="content">

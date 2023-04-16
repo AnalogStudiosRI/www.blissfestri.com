@@ -1,15 +1,11 @@
 export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <div
-        class="bg-no-repeat h-60 event-details"
-        style="height: 900px; width: 900px; background-image:url('/assets/images/ri-map.webp'); padding-left: min(460px);"
-      >
-
+      <div class="text-center">
         <h1
-          class="text-accent text-6xl text-center font-secondary"
+          class="font-secondary text-accent text-6xl mb-4"
         >
-          <span class="flex flex-nowrap justify-between pt-4 pb-4">
+          <span class="flex flex-nowrap justify-between">
             <span>R</span>
             <span>h</span>
             <span>o</span>
@@ -25,7 +21,7 @@ export default class EventDetails extends HTMLElement {
             <span>&apos;</span>
             <span>s</span>
           </span>
-          <span class="flex flex-nowrap justify-between text-8xl">
+          <span class="flex flex-nowrap justify-between md:mt-2">
             <span>I</span>
             <span>n</span>
             <span>d</span>
@@ -38,7 +34,7 @@ export default class EventDetails extends HTMLElement {
             <span>i</span>
             <span>c</span>
           </span>
-          <span class="flex flex-nowrap pl-72 w-60 justify-evenly text-8xl pt-4 pb-4">
+          <span class="flex flex-nowrap justify-evenly">
             <span>F</span>
             <span>e</span>
             <span>s</span>
@@ -50,38 +46,35 @@ export default class EventDetails extends HTMLElement {
           </span>
         </h1>
 
-        <h2 class="text-primary text-6xl pb-2 pl-44 font-secondary">
+        <h2 class="text-primary font-secondary text-5xl mb-1">
           <span>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 class="text-accent text-4xl m-2 pl-44 font-secondary">
-          <span>5:00pm to 11:00pm<span>
+        <h2 class="text-accent font-secondary text-4xl">
+          <span>5:00pm to 11:00pm</span>
         </h2>
 
-        <div class="pl-32 pt-40">
-          <div class="flex location">
-            <div class="w-2/5">
-              <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo">
-            </div>
-            <div class="pl-4 content">
-              <h3 class="text-accent text-2xl font-secondary">Restoration Hall</h3>
-              <h4 class="text-primary italic text-xl">449 Thames Street</h4>
-              <h4 class="text-primary italic text-xl">Newport&#44; RI 02840</h4>
-            </div>
-          </div>
-
-          <div class="flex pt-8 presenter">
-            <div class="w-2/5">
-              <img src="/assets/images/analog-studios-logo.webp" alt="Analog Studios logo">
-            </div>
-            <div class="pl-4 content">
-              <h3 class="text-primary pt-4 text-xl">Presented by</h3>
-              <h4 class="text-primary text-xl underline">
-                <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
-              </h4>
-            </div>
+        <div class="location mr-auto ml-auto w-2/3 mt-4">
+          <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo" class="inline-block">
+          <div class="content inline-block">
+            <h3 class="text-accent font-secondary text-left">Restoration Hall</h3>
+            <h4 class="text-primary italic text-2xl text-left">449 Thames Street</h4>
+            <h4 class="text-primary italic text-2xl text-left">Newport&#44; RI</h4>
           </div>
         </div>
+
+        <img src="/assets/images/ri-map.webp" class="block"/>
+
+        <div class="mr-auto ml-auto mt-4 w-3/4">
+          <img src="/assets/images/analog-studios-logo.webp" class="inline-block" alt="Analog Studios logo"/>
+          <div class="content inline-block ml-4">
+            <h3 class="text-primary text-lg">Presented by</h3>
+            <h4 class="text-accent font-secondary text-xl underline">
+              <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
+            </h4>
+          </div>
+        </div>
+
       </div>
     `;
   }

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -49,11 +50,13 @@ export default class EventDetails extends HTMLElement {
           </span>
         </h1>
 
-        <h2 class="text-primary font-secondary text-center text-5xl mb-1 sm:text-justify sm:text-4xl sm:pl-96 sm:ml-8 sm:pt-2 md:pt-4 md:text-5xl md:pl-80 md:ml-28 md:mt-1 lg:text-5xl lg:pl-96 lg:ml-40">
+        <h2
+          class="text-primary font-secondary text-center text-5xl mb-1 sm:text-justify sm:text-4xl sm:pl-96 sm:ml-12 sm:pt-2 md:pt-4 md:text-5xl md:pl-80 md:ml-28 md:mt-1 lg:text-5xl lg:pl-96 lg:ml-40"
+        >
           <span>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 class="text-accent font-secondary text-center text-4xl sm:text-3xl sm:text-justify sm:pl-80 sm:ml-16 md:text-4xl md:pl-80 md:mt-2 md:ml-24 lg:text-5xl lg:pl-96 lg:ml-24">
+        <h2 class="text-accent font-secondary text-center text-4xl sm:text-3xl sm:text-justify sm:pl-80 sm:ml-20 md:text-4xl md:pl-80 md:mt-2 md:ml-24 lg:text-5xl lg:pl-96 lg:ml-24">
           <span>5:00pm to 11:00pm</span>
         </h2>
 
@@ -85,29 +88,6 @@ export default class EventDetails extends HTMLElement {
             </h4>
           </div>
         </div>
-
-        <!--
-        <div class="sm:pt-4 sm:mt-3 md:pl-70 md:ml-12 md:pt-2 md:mt-2 lg:pl-8 lg:mt-8">
-          <div class="location mr-auto ml-auto mt-4 w-5/6 sm:ml-72 sm:z-200 sm:mr-2 sm:mt-8 md:mt-0 md:ml-80 lg:mr-0">
-            <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo" class="inline-block w-1/4 md:w-1/4 lg:w-2/5">
-            <div class="content inline-block">
-              <h3 class="text-accent font-secondary text-left sm:text-2xl md:text-3xl lg:text-3xl">Restoration Hall</h3>
-              <h4 class="text-primary italic text-2xl text-left">449 Thames Street</h4>
-              <h4 class="text-primary italic text-2xl text-left">Newport&#44; RI</h4>
-            </div>
-          </div>
-
-          <div class="mr-auto ml-auto mt-4 w-3/6 sm:ml-72 md:ml-80">
-            <img src="/assets/images/analog-studios-logo.webp" class="inline-block w-3/4 sm:w-1/3 mr-2 md:w-1/3 lg:w-3/6 lg:ml-8 lg:mt-4" alt="Analog Studios logo"/>
-            <div class="content inline-block ml-4 lg:ml-2">
-              <h3 class="text-primary text-lg lg:text-1xl">Presented by</h3>
-              <h4 class="text-accent font-secondary text-xl underline lg:text-1xl">
-                <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <-- 
       </div>
     `;
   }

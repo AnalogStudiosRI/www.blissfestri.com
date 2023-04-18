@@ -1,15 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   purge: ['./src/**/*.{html,js}'],
   mode: 'jit',
   theme: {
-    // screens: {
-    //   'xss': '200px',
-    //   'xs': '400px',
-    //   ...defaultTheme.screens
-    // },
     extend: {
       colors: {
         primary: '#026769',

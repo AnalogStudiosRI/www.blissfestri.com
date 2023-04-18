@@ -1,15 +1,15 @@
+/* eslint-disable max-len */
 export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <div
-        class="bg-no-repeat h-60 event-details"
-        style="height: 900px; width: 900px; background-image:url('/assets/images/ri-map.webp'); padding-left: min(460px);"
-      >
+      <div class="inline-block event-details">
+
+        <img src="/assets/images/ri-map.webp" class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md" style="position:absolute; z-index:-1">
 
         <h1
-          class="text-accent text-6xl text-center font-secondary"
+          class="font-secondary text-accent text-5xl mb-4 sm:text-6xl sm:pl-60 sm:ml-8 md:text-6xl md:pl-72 lg:pl-80 lg:ml-12 lg:text-7xl"
         >
-          <span class="flex flex-nowrap justify-between pt-4 pb-4">
+          <span class="flex flex-nowrap justify-between">
             <span>R</span>
             <span>h</span>
             <span>o</span>
@@ -25,7 +25,7 @@ export default class EventDetails extends HTMLElement {
             <span>&apos;</span>
             <span>s</span>
           </span>
-          <span class="flex flex-nowrap justify-between text-8xl">
+          <span class="flex flex-nowrap justify-between md:mt-2">
             <span>I</span>
             <span>n</span>
             <span>d</span>
@@ -38,7 +38,7 @@ export default class EventDetails extends HTMLElement {
             <span>i</span>
             <span>c</span>
           </span>
-          <span class="flex flex-nowrap pl-72 w-60 justify-evenly text-8xl pt-4 pb-4">
+          <span class="flex flex-nowrap justify-evenly sm:text-6xl sm:pl-24 sm:mt-2 md:text-6xl md:pl-20 md:pt-2 lg:text-7">
             <span>F</span>
             <span>e</span>
             <span>s</span>
@@ -50,36 +50,42 @@ export default class EventDetails extends HTMLElement {
           </span>
         </h1>
 
-        <h2 class="text-primary text-6xl pb-2 pl-44 font-secondary">
+        <h2
+          class="text-primary font-secondary text-center text-5xl mb-1 sm:text-justify sm:text-4xl sm:pl-96 sm:ml-12 sm:pt-2 md:pt-4 md:text-5xl md:pl-80 md:ml-28 md:mt-1 lg:text-5xl lg:pl-96 lg:ml-40"
+        >
           <span>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 class="text-accent text-4xl m-2 pl-44 font-secondary">
-          <span>5:00pm to 11:00pm<span>
+        <h2 class="text-accent font-secondary text-center text-4xl sm:text-3xl sm:text-justify sm:pl-80 sm:ml-20 md:text-4xl md:pl-80 md:mt-2 md:ml-24 lg:text-5xl lg:pl-96 lg:ml-24">
+          <span>5:00pm to 11:00pm</span>
         </h2>
 
-        <div class="pl-32 pt-40">
-          <div class="flex location">
-            <div class="w-2/5">
-              <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo">
-            </div>
-            <div class="pl-4 content">
-              <h3 class="text-accent text-2xl font-secondary">Restoration Hall</h3>
-              <h4 class="text-primary italic text-xl">449 Thames Street</h4>
-              <h4 class="text-primary italic text-xl">Newport&#44; RI 02840</h4>
-            </div>
-          </div>
+        <img src="/assets/images/ri-map.webp" class="block sm:hidden pt-2" style="width: 350px"/>
 
-          <div class="flex pt-8 presenter">
-            <div class="w-2/5">
-              <img src="/assets/images/analog-studios-logo.webp" alt="Analog Studios logo">
-            </div>
-            <div class="pl-4 content">
-              <h3 class="text-primary pt-4 text-xl">Presented by</h3>
-              <h4 class="text-primary text-xl underline">
-                <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
-              </h4>
-            </div>
+        <div class="location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
+          <img
+            src="/assets/images/iyrs-logo.webp"
+            alt="Iyrs logo"
+            class="inline-block w-3/5 sm:inline-block sm:w-2/5 sm:align-top md:w-1/2 md:-mt-12 lg:w-2/5"
+          >
+          <div class="content ml-2 sm:inline-block md:-mt-12">
+            <h3 class="text-accent font-secondary text-left text-1xl sm:text-2xl lg:text-4xl">Restoration Hall</h3>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-1xl lg:text-3xl">449 Thames Street</h4>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-1xl lg:text-3xl">Newport&#44; RI 02840</h4>
+          </div>
+        </div>
+
+        <div class="presenter text-center pt-12 sm:pl-60 sm:ml-8 sm:-mt-8">
+          <img
+            src="/assets/images/analog-studios-logo.webp"
+            alt="Analog Studios logo"
+            class="inline-block w-2/5 sm:w-1/3 md:w-2/5 md:ml-6 lg:w-2/6 lg:ml-12"
+          />
+          <div class="content inline-block w-1/3 ml-4 pt-4 sm:ml-4 sm:text-left lg:ml-2">
+            <h3 class="text-primary text-lg sm:text-2xl lg:text-3xl">Presented by</h3>
+            <h4 class="text-accent font-secondary text-lg underline lg:text-3xl">
+              <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
+            </h4>
           </div>
         </div>
       </div>

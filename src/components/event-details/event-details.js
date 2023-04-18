@@ -70,8 +70,8 @@ export default class EventDetails extends HTMLElement {
           >
           <div class="content ml-2 sm:inline-block md:-mt-12">
             <h3 class="text-accent font-secondary text-left text-1xl sm:text-2xl lg:text-4xl">Restoration Hall</h3>
-            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-2xl lg:text-3xl">449 Thames Street</h4>
-            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-2xl lg:text-3xl">Newport&#44; RI 02840</h4>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-1xl lg:text-3xl">449 Thames Street</h4>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-1xl lg:text-3xl">Newport&#44; RI 02840</h4>
           </div>
         </div>
 

@@ -71,18 +71,18 @@ export default class EventDetails extends HTMLElement {
           <div class="content ml-2 sm:inline-block md:-mt-12">
             <h3 class="text-accent font-secondary text-left text-1xl sm:text-2xl lg:text-4xl">Restoration Hall</h3>
             <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-2xl lg:text-3xl">449 Thames Street</h4>
-            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-2xl lg:text-3xl">Newport&#44; RI</h4>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg md:text-2xl lg:text-3xl">Newport&#44; RI 02840</h4>
           </div>
         </div>
 
-        <div class="text-center pt-12 sm:pl-60 sm:ml-8 sm:-mt-8">
+        <div class="presenter text-center pt-12 sm:pl-60 sm:ml-8 sm:-mt-8">
           <img
             src="/assets/images/analog-studios-logo.webp"
             alt="Analog Studios logo"
             class="inline-block w-2/5 sm:w-1/3 md:w-2/5 md:ml-6 lg:w-2/6 lg:ml-12"
           />
           <div class="content inline-block w-1/3 ml-4 pt-4 sm:ml-4 sm:text-left lg:ml-2">
-            <h3 class="text-primary text-lg sm:text-2xl lg:text-4xl">Presented by</h3>
+            <h3 class="text-primary text-lg sm:text-2xl lg:text-3xl">Presented by</h3>
             <h4 class="text-accent font-secondary text-lg underline lg:text-3xl">
               <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
             </h4>

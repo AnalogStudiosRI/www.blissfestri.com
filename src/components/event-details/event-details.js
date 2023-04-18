@@ -1,14 +1,9 @@
-/*
- * TODO
- * - re-use image tags and any custom style attributes
- * - 
- */ 
 export default class EventDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="inline-block event-details">
 
-        <img src="/assets/images/ri-map.webp" class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md" style="position:absolute">
+        <img src="/assets/images/ri-map.webp" class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md" style="position:absolute; z-index:-1">
 
         <h1
           class="font-secondary text-accent text-5xl mb-4 sm:text-6xl sm:pl-60 sm:ml-8 md:text-6xl md:pl-72 lg:pl-80 lg:ml-12 lg:text-7xl"
@@ -58,25 +53,25 @@ export default class EventDetails extends HTMLElement {
           <span>7 &dot; 29 &dot; 2023</span>
         </h2>
 
-        <h2 class="text-accent font-secondary text-center text-4xl sm:text-3xl sm:text-justify sm:pl-80 sm:ml-16 sm:mt-2 md:text-4xl md:pl-80 md:mt-2 md:ml-24 lg:text-5xl lg:pl-96 lg:ml-24">
+        <h2 class="text-accent font-secondary text-center text-4xl sm:text-3xl sm:text-justify sm:pl-80 sm:ml-16 md:text-4xl md:pl-80 md:mt-2 md:ml-24 lg:text-5xl lg:pl-96 lg:ml-24">
           <span>5:00pm to 11:00pm</span>
         </h2>
 
         <img src="/assets/images/ri-map.webp" class="block sm:hidden pt-2" style="width: 350px"/>
 
-        <div class="location pl-48 -mt-32 sm:ml-72 sm:z-200 sm:mr-2 sm:mt-8 md:mt-0 md:ml-80 lg:mr-0">
-          <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo" class="block w-3/5 md:w-1/4 lg:w-2/5">
-          <div class="content ml-4">
-            <h3 class="text-accent font-secondary text-left text-1xl lg:text-3xl">Restoration Hall</h3>
-            <h4 class="text-primary italic text-sm text-left">449 Thames Street</h4>
-            <h4 class="text-primary italic text-sm text-left">Newport&#44; RI</h4>
+        <div class="location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2">
+          <img src="/assets/images/iyrs-logo.webp" alt="Iyrs logo" class="inline-block w-3/5 sm:inline-block sm:w-2/5 sm:align-top md:w-1/4 lg:w-2/5">
+          <div class="content ml-2 sm:inline-block">
+            <h3 class="text-accent font-secondary text-left text-1xl sm:text-2xl lg:text-3xl">Restoration Hall</h3>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg">449 Thames Street</h4>
+            <h4 class="text-primary italic text-sm text-left sm:text-lg">Newport&#44; RI</h4>
           </div>
         </div>
 
-        <div class="text-center pt-12">
-          <img src="/assets/images/analog-studios-logo.webp" class="inline-block w-2/5" alt="Analog Studios logo"/>
-          <div class="content inline-block w-1/3 ml-4 pt=4 lg:ml-2">
-            <h3 class="text-primary text-lg lg:text-2xl">Presented by</h3>
+        <div class="text-center pt-12 sm:pl-60 sm:ml-8 sm:-mt-8">
+          <img src="/assets/images/analog-studios-logo.webp" class="inline-block w-2/5 sm:w-1/3" alt="Analog Studios logo"/>
+          <div class="content inline-block w-1/3 ml-4 pt-4 sm:ml-4 sm:text-left lg:ml-2">
+            <h3 class="text-primary text-lg sm:text-2xl lg:text-2xl">Presented by</h3>
             <h4 class="text-accent font-secondary text-lg underline lg:text-1xl">
               <a href="https://www.analogstudios.net" title="Analog Studios website">Analog Studios</a>
             </h4>

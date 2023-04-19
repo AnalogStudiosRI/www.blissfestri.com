@@ -11,7 +11,7 @@ export default class SignupForm extends HTMLElement {
           class="inline-block w-32"
           loading="lazy"
         />
-        <div class="mr-auto ml-auto md:w-3/5 xl:w-2/5">
+        <div class="mr-auto ml-auto md:w-3/5 xl:w-3/5">
           <h2
             class="font-bold text-secondary text-4xl uppercase mt-4 mb-4"
             >

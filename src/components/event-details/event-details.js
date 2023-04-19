@@ -62,7 +62,7 @@ export default class EventDetails extends HTMLElement {
 
         <img src="/assets/images/ri-map.webp" class="block sm:hidden pt-2" style="width: 350px"/>
 
-        <div class="location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
+        <div class="text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
           <img
             src="/assets/images/iyrs-logo.webp"
             alt="Iyrs logo"

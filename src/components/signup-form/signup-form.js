@@ -55,7 +55,7 @@ export default class SignupForm extends HTMLElement {
         </div>
         <div class="flex gap-x-4 justify-center mb-1 mt-20">
           <a
-            href="https://www.facebook.com/analogstudiosri/"
+            href="https://www.facebook.com/blissfestri/"
             aria-label="Analog Studios Facebook page"
             target="_blank"
             class="ml-2 mr-2"

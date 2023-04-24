@@ -3,13 +3,27 @@
 
   <head>
     <title>Blissfest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="../styles/main.css"/>
     <script type="module" src="../components/header/header.js" data-gwd-opt="static"></script>
+    <script type="module" src="../components/event-details/event-details.js" data-gwd-opt="static"></script>
+    <script type="module" src="../components/signup-form/signup-form.js" data-gwd-opt="static"></script>
   </head>
 
   <body>
     <bf-header></bf-header>
-    <h1 class="text-center">Blissfest is coming soon!</h1>
+
+    <main class="p-4 xl:text-center xl:block">
+      <bf-event-details
+        class="block text-center xl:inline-block xl:w-8/12 align-top"
+      >
+      </bf-event-details>
+
+      <bf-signup-form 
+        class="xl:inline-block xl:w-2/12 xl:align-text-bottom"
+      >
+      </bf-signup-form>
+    </main>
   </body>
 
 </html>

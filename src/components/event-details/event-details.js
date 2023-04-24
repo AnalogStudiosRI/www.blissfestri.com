@@ -60,7 +60,7 @@ export default class EventDetails extends HTMLElement {
           <span>5:00pm to 11:00pm</span>
         </h2>
 
-        <img src="/assets/images/ri-map.webp" class="block sm:hidden pt-2" style="width: 350px"/>
+        <img src="/assets/images/ri-map-mobile.webp" class="block sm:hidden pt-2" style="width: 350px"/>
 
         <div class="text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
           <img

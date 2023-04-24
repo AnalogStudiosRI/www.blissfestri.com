@@ -4,7 +4,9 @@ export default class EventDetails extends HTMLElement {
     this.innerHTML = `
       <div class="inline-block event-details">
 
-        <img src="/assets/images/ri-map.webp" class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md" style="position:absolute; z-index:-1">
+
+        <img src="/assets/images/ri-map.webp" class="block pt-2 w-350 sm:pt-0 sm-max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md sm:absolute sm:z-(-1)">
+
 
         <h1
           class="font-secondary text-accent text-5xl mb-4 sm:text-6xl sm:pl-60 sm:ml-8 md:text-6xl md:pl-72 lg:pl-80 lg:ml-12 lg:text-7xl"
@@ -60,7 +62,6 @@ export default class EventDetails extends HTMLElement {
           <span>5:00pm to 11:00pm</span>
         </h2>
 
-        <img src="/assets/images/ri-map.webp" class="block sm:hidden pt-2" style="width: 350px"/>
 
         <div class="text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
           <img

@@ -3,7 +3,7 @@ export default class SignupForm extends HTMLElement {
     this.innerHTML = `
       <div
         id="signup-form"
-        class="font-primary bg-primary text-primary text-center p-1 m-4"
+        class="font-primary bg-primary text-primary text-center p-1 m-4 xl:m-0 xl:p-0"
       >
         <img
           src="/assets/images/message-bottle.png"

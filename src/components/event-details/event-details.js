@@ -4,7 +4,14 @@ export default class EventDetails extends HTMLElement {
     this.innerHTML = `
       <div class="inline-block event-details">
 
-        <img src="/assets/images/ri-map.webp" class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md" style="position:absolute; z-index:-1">
+        <img
+          src="/assets/images/ri-map.webp"
+          class="hidden sm:block max-w-sm md:max-w-sm lg:max-w-md xl:max-w-md"
+          style="position:absolute; z-index:-1"
+          width="600"
+          height="878"
+          alt="Map of Rhode Island counties"
+        >
 
         <h1
           class="font-secondary text-accent text-5xl mb-4 sm:text-6xl sm:pl-60 sm:ml-8 md:text-6xl md:pl-72 lg:pl-80 lg:ml-12 lg:text-7xl"
@@ -60,12 +67,20 @@ export default class EventDetails extends HTMLElement {
           <span>5:00pm to 11:00pm</span>
         </h2>
 
-        <img src="/assets/images/ri-map-mobile.webp" class="block sm:hidden pt-2" style="width: 350px"/>
+        <img
+          src="/assets/images/ri-map-mobile.webp"
+          class="block sm:hidden pt-2"
+          width="350"
+          height="512"
+          alt="Map of Rhode Island counties"
+        />
 
         <div class="text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
           <img
             src="/assets/images/iyrs-logo.webp"
             alt="Iyrs logo"
+            width="200"
+            height="127"
             class="inline-block w-3/5 sm:inline-block sm:w-2/5 sm:align-top md:w-1/2 md:-mt-12 lg:w-2/5"
           >
           <div class="content ml-2 sm:inline-block md:-mt-12">
@@ -79,6 +94,8 @@ export default class EventDetails extends HTMLElement {
           <img
             src="/assets/images/analog-studios-logo.webp"
             alt="Analog Studios logo"
+            width="200"
+            height="151"
             class="inline-block w-2/5 sm:w-1/3 md:w-2/5 md:ml-6 lg:w-2/6 lg:ml-12"
           />
           <div class="content inline-block w-1/3 ml-4 pt-4 sm:ml-4 sm:text-left lg:ml-2">

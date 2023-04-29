@@ -9,6 +9,8 @@ export default class SignupForm extends HTMLElement {
           src="/assets/images/message-bottle.png"
           alt="popped open bottle with music sheet"
           class="inline-block w-32"
+          width="226"
+          height="190"
           loading="lazy"
         />
         <div class="mr-auto ml-auto md:w-3/5 xl:w-3/5">
@@ -63,7 +65,8 @@ export default class SignupForm extends HTMLElement {
             <img
               src="/assets/images/facebook-icon.png"
               alt="Analog Studios Facebook page"
-              width="20"
+              width="40"
+              height="40"
               loading="lazy"
             />
           </a>
@@ -76,7 +79,8 @@ export default class SignupForm extends HTMLElement {
             <img
               src="/assets/images/youtube-icon.png"
               alt="Analog Studios YouTube page"
-              width="20"
+              width="40"
+              height="40"
               loading="lazy"
             />
           </a>
@@ -89,7 +93,8 @@ export default class SignupForm extends HTMLElement {
             <img
               src="/assets/images/instagram-icon.png"
               alt="Dave Flamand Instagram page"
-              width="20"
+              width="40"
+              height="40"
               loading="lazy"
             />
           </a>

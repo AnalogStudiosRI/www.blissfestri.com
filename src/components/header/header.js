@@ -8,7 +8,12 @@ export default class Header extends HTMLElement {
         <div class="text-center bg-primary">
           <img
             class="inline-block w-2/3 pt-5 pb-5 lg:w-1/2"
-            src="/assets/images/blissfest-logo.webp"
+            src="/assets/images/blissfest-logo-sm.webp"
+            width="500"
+            height="123"
+            srcset="/assets/images/blissfest-logo-sm.webp 500w,
+                    /assets/images/blissfest-logo-md.webp 1000w,
+                    /assets/images/blissfest-logo-lg.webp 1500w"
             alt="Blissfest logo"
           />
         </div>

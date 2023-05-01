@@ -2,8 +2,7 @@ export default class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header
-        class="pb-16 bg-repeat-x bg-bottom"
-        style="background-image: url('/assets/images/tear-strip.webp');"
+        class="bg-[url('/assets/images/tear-strip.webp')] pb-16 bg-repeat-x bg-bottom"
       >
         <div class="text-center bg-primary">
           <img

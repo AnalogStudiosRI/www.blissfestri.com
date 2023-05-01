@@ -30,6 +30,8 @@
     "clean": "rimraf public/ .greenwood/ ./storybook-static"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "@esm-bundle/chai": "^4.3.4",
     "@greenwood/cli": "~0.28.0",
     "@greenwood/plugin-postcss": "~0.28.0",

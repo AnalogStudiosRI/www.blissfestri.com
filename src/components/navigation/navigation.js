@@ -46,7 +46,7 @@ export default class Navigation extends HTMLElement {
               const activePath = path === url;
 
               return `
-                <li class="m-2 text-3xl inline-block w-1/4 lg:w-1/12 text-center">
+                <li class="m-2 md:m-4 text-center text-3xl inline-block w-1/4 lg:w-1/12 lg:text-4xl">
                   <a
                     class="nav-link ${activePath ? 'text-tertiary' : 'text-white'} hover:text-tertiary"
                     href="${url}"

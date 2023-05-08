@@ -5,7 +5,7 @@ body {
   font-family: var(--font-primary);
 }
 
-#signup-form {
+#newsletter-signup {
   border: 15px solid transparent;
   border-image-source: url('/assets/images/screen-form-edge.png');
   border-image-repeat: stretch;

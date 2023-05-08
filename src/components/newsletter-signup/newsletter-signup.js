@@ -24,7 +24,7 @@ export default class NewsletterSignup extends HTMLElement {
               Subscribe to stay up to date with the latest Blissfest news and updates!
           </p>
           <form
-            name="newsletter"
+            name="newsletter-signup"
             method="POST"
             data-netlify="true"
             class="width-full flex flex-col gap-4"

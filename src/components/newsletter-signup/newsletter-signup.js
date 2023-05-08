@@ -2,6 +2,7 @@ export default class NewsletterSignup extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
+        id="newsletter-signup"
         class="font-primary bg-primary text-primary text-center p-1 m-4 xl:m-0 xl:p-0"
       >
         <img

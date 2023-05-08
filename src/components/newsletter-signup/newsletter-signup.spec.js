@@ -1,11 +1,11 @@
 import { expect } from '@esm-bundle/chai';
-import './signup-form.js';
+import './newsletter-signup.js';
 
-describe('Components/Signup Form', () => {
+describe('Components/Newsletter Signup', () => {
   let form;
 
   before(async () => {
-    form = document.createElement('bf-signup-form');
+    form = document.createElement('bf-newsletter-signup');
     document.body.appendChild(form);
 
     await form.updateComplete;
@@ -28,7 +28,7 @@ describe('Components/Signup Form', () => {
       expect(image.alt).to.equal('popped open bottle with music sheet');
       expect(heading.textContent.trim()).to.equal('Stay in Touch!');
       expect(tagLine.textContent.trim()).to.equal(
-        'Subscribe to stay up to date for this summer\'s upcoming music festivities!'
+        'Subscribe to stay up to date with the latest Blissfest news and updates!'
       );
       expect(lables[0].textContent.trim()).to.equal('Name (optional)');
       expect(lables[1].textContent.trim()).to.equal('Email Address');

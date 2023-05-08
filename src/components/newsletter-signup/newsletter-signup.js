@@ -1,8 +1,7 @@
-export default class SignupForm extends HTMLElement {
+export default class NewsletterSignup extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        id="signup-form"
         class="font-primary bg-primary text-primary text-center p-1 m-4 xl:m-0 xl:p-0"
       >
         <img
@@ -22,10 +21,10 @@ export default class SignupForm extends HTMLElement {
           <p
             class="text-white mb-6 m-auto"
           >
-              Subscribe to stay up to date for this summer's upcoming music festivities!
+              Subscribe to stay up to date with the latest Blissfest news and updates!
           </p>
           <form
-            name="sign-up"
+            name="newsletter"
             method="POST"
             data-netlify="true"
             class="width-full flex flex-col gap-4"
@@ -105,4 +104,4 @@ export default class SignupForm extends HTMLElement {
   }
 }
 
-customElements.define('bf-signup-form', SignupForm);
+customElements.define('bf-newsletter-signup', NewsletterSignup);

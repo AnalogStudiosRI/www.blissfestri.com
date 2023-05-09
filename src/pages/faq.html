@@ -5,48 +5,98 @@
   </head>
   <body>
 
-    <h1 class="font-secondary text-center text-primary text-5xl">
-      FAQ &amp; Information
-    </h1>
-    <h2 class="font-primary text-center text-primary uppercase font-extrabold text-2xl mt-4">
-      Table of Contents
-    </h2>
-    <nav class="mb-4">
-      <ul class="uppercase text-primary text-center">
-        <li class="inline"><a href="#location">Location <span class="text-secondary">|</span></a></li>
-        <li class="inline"><a href="#policies">Policies <span class="text-secondary">|</span></a></li>
-      </ul>
-    </nav>
+    <div class="md:w-3/5 ml-auto mr-auto">
+      <h1 class="font-secondary text-center text-primary text-5xl">
+        FAQ &amp; Information
+      </h1>
+      <h2 class="font-primary text-center text-primary uppercase font-extrabold text-2xl mt-4">
+        Table of Contents
+      </h2>
+      <nav class="mb-4 w-2/3 ml-auto mr-auto">
+        <ul class="uppercase text-primary font-primary text-center">
+          <li class="inline"><a href="#location">Location <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#policies">Policies <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#schedule">Schedule <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#vendors">Vendors <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#weather">Weather <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#emergency">Emergency <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#expect">What to Expect <span class="text-secondary">|</span></a></li>
+          <li class="inline"><a href="#parking">Parking</a></li>
+        </ul>
+      </nav>
+  
+      <bf-faq-card
+        label="location"
+        heading="Where is the festival being held at?"
+        content="Blissfest will be hosted at IRYS School of Technology &amp; Trades, inside Restoration Hall."
+      >
+      </bf-faq-card>
+      <div class="text-center">
+        <img
+          src="https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image.png"
+          alt="Picture OF IYRS"
+          class="w-2/5 inline-block"
+        />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.075093525323!2d-71.31748052396287!3d41.48097167128812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5af66d0f22e81%3A0xf02e59b6f5959263!2sIYRS%20School%20of%20Technology%20and%20Trades!5e0!3m2!1sen!2sus!4v1683505272719!5m2!1sen!2sus"
+          class="inline-block w-2/5"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          >
+        </iframe>
+      </div>
 
-    <bf-faq-card
-      label="location"
-      heading="Where is the festival being held at?"
-      content="Blissfest will be hosted at IRYS School of Technology &amp; Trades, inside Restoration Hall."
-    >
-    </bf-faq-card>
-    <div class="text-center">
-      <img 
-        src="https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image.png" 
-        alt="Picture OF IYRS"
-        class="w-2/5 inline-block"
-      />
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.075093525323!2d-71.31748052396287!3d41.48097167128812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5af66d0f22e81%3A0xf02e59b6f5959263!2sIYRS%20School%20of%20Technology%20and%20Trades!5e0!3m2!1sen!2sus!4v1683505272719!5m2!1sen!2sus"
-        class="inline-block w-2/5"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        >
-      </iframe>
+      <bf-faq-card
+        label="policies"
+        heading="Policies"
+        content="No outside alcohol or food allowed.  No weapons.  All attendees assume their own liability."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="schedule"
+        heading="When will everything open?"
+        content="Doors for the event open at 5pm with music starting at 5:30pm.  The festival ends at 11pm."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="vendors"
+        heading="Will there be vendors?"
+        content="There will be vendors for food and alcohol as well as variety of other local vendors, as well as Blissfest merchandise."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="weather"
+        heading="Weather Policy"
+        content="Blissfest is an indoor festival that will take place rain or shine."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="emergency"
+        heading="What if there is an emergency?"
+        content="Blissfest will abide by all local building codes and inspection guidelines.  In addition a police detail will be on site to assist with an emergency."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="expect"
+        heading="What to expect"
+        content="At the entrance to IYRS attendees will be asked to provide their ticket in exchange for a wristband.  Ushers will be inside to show you to the stsge, VIP rooms, and vendors."
+      >
+      </bf-faq-card>
+
+      <bf-faq-card
+        label="parking"
+        heading="Will there be parking?"
+        content="Limited parking will be available in the IYRS parking lot.  Arrive early or carpool to snag a spot!"
+      >
+      </bf-faq-card>
     </div>
-
-    <bf-faq-card
-      label="policies"
-      heading="Policies"
-      content="TODO"
-    >
-    </bf-faq-card>
 
   </body>
 

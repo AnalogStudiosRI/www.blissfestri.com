@@ -5,10 +5,10 @@ class FAQCard extends HTMLElement {
     const label = this.getAttribute('label');
 
     this.innerHTML = `
-      <h3 id="${label}" class="text-accent font-primary uppercase text-1xl font-extrabold mt-4">
+      <h3 id="${label}" class="text-accent font-primary uppercase text-2xl font-extrabold mt-4 text-left">
         ${heading}
       </h3>
-      <p class="text-primary font-primary">
+      <p class="text-primary font-primary font-bold text-left">
         ${content}
       </p>
     `;

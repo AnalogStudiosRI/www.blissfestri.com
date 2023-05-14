@@ -2,7 +2,7 @@
 <html>
   <head>
     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-    <script>
+    <!-- <script>
       const EB = globalThis?.EBWidgets ?? null; // handle for SSR
 
       if(EB) {
@@ -13,9 +13,28 @@
           modalTriggerElementId: 'eventbrite-widget-modal-trigger-631211098387'
         });
       }
-    </script>
-  </head>
+    </script> -->
 
+    <!-- embed -->
+    <script type="text/javascript">
+      globalThis.document.addEventListener('DOMContentLoaded', () => {
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '631211098387',
+            iframeContainerId: 'eventbrite-widget-container-631211098387',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+      })
+    </script> -->
+  </head>
   <body>
     <h1
       class="font-secondary text-5xl text-primary text-center"
@@ -49,9 +68,11 @@
 
     <hr class="mt-4 mb-4"/>
 
-    <button id="eventbrite-widget-modal-trigger-631211098387" type="button">
+    <div id="eventbrite-widget-container-631211098387"></div>
+    <!-- You can customize this button any way you like -->
+    <!-- <button id="eventbrite-widget-modal-trigger-631211098387" type="button">
       <img src="/assets/images/get-tickets.png" class="w-2/3 mr-auto ml-auto md:w-1/3 xl:w-1/6"/>
-    </button>
+    </button> -->
     
   </body>
 

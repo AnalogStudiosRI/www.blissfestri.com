@@ -3,16 +3,26 @@
   <head>
     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
     <script>
-      const EB = globalThis?.EBWidgets ?? null; // handle for SSR
-
-      if(EB) {
+      globalThis.document.addEventListener('DOMContentLoaded', () => {
         globalThis.EBWidgets.createWidget({
           widgetType: 'checkout',
           eventId: '631211098387',
           modal: true,
           modalTriggerElementId: 'eventbrite-widget-modal-trigger-631211098387'
         });
-      }
+
+        globalThis.EBWidgets.createWidget({
+           // Required
+           widgetType: 'checkout',
+           eventId: '631211098387',
+           iframeContainerId: 'eventbrite-widget-container-631211098387',
+
+           // Optional
+           iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+         });
+      });
+     </script>
+
     </script>
   </head>
 
@@ -23,36 +33,45 @@
       Tickets
     </h1>
 
-    <div class="mt-8 text-left md:text-center">
+    <div class="text-center mt-4 lg:hidden">
+      <button id="eventbrite-widget-modal-trigger-631211098387" type="button">
+        <img src="/assets/images/get-tickets.png" class="w-2/5 mr-auto ml-auto"/>
+      </button>
+
+      <hr class="mt-4 mb-4"/>
+    </div>
+
+    <div>
+      
+    </div>
+    <div class="mt-8 text-left lg:w-2/5 lg:ml-44">
       <h2
         class="font-primary text-primary text-2xl uppercase font-extrabold mb-2"
       >
-        <img src="/assets/images/ga-ticket.png" class="inline-block w-1/4 md:w-1/6 xl:w-1/12"/>
+        <img src="/assets/images/ga-ticket.png" class="inline-block w-1/4 md:w-1/5"/>
         General Admission (&dollar;25)
       </h2>
-      <p class="font-primary text-primary text-left md:w-1/2 md:mr-auto md:ml-auto md:text-2xl xl:w-1/3">
+      <p class="font-primary text-primary text-left">
         This tickets affords admission for one adult (18+) with access to the entrance gallery, main hall, and vendors gallery.
       </p>
     </div>
 
-    <div class="mt-8 text-left md:text-center">
+    <div class="mt-8 text-left lg:w-2/5 lg:ml-44">
       <h2
         class="font-primary text-primary text-2xl uppercase font-extrabold mb-2"
       >
-        <img src="/assets/images/vip-ticket.png" class="inline-block w-1/4 md:w-1/6 xl:w-1/12"/>
+        <img src="/assets/images/vip-ticket.png" class="inline-block w-1/4 md:w-1/5"/>
         VIP (&dollar;35)
       </h2>
-      <p class="font-primary text-primary text-left md:w-1/2 md:mr-auto md:ml-auto md:text-2xl xl:w-1/3">
+      <p class="font-primary text-primary text-left">
         Includes GA and access to the mezzanine section and green room, a 10% off merch coupon code, and complimentary snacks and refreshments.
       </p>
     </div>
 
-    <hr class="mt-4 mb-4"/>
-
-    <button id="eventbrite-widget-modal-trigger-631211098387" type="button">
-      <img src="/assets/images/get-tickets.png" class="w-2/3 mr-auto ml-auto md:w-1/3 xl:w-1/6"/>
-    </button>
-    
+    <div
+      id="eventbrite-widget-container-631211098387"
+      class="hidden lg:inline-block w-1/3 float-right -mt-60 mr-24"
+    ></div>
   </body>
 
 </html>

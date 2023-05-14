@@ -11,8 +11,10 @@
           modalTriggerElementId: 'eventbrite-widget-modal-trigger-631211098387'
         });
 
-        // TODO would be great if this could be conditionally loaded based on breakpoint
-        // so it only loads on desktop
+        // TODO would be great if this could be conditionally loaded based on desktop breakpoint
+        // https://github.com/AnalogStudiosRI/www.blissfestri.com/issues/77
+        // TODO figure out how to get a title attribute out of iframe embed
+        // https://github.com/AnalogStudiosRI/www.blissfestri.com/issues/76
         globalThis.EBWidgets.createWidget({
            // Required
            widgetType: 'checkout',
@@ -23,8 +25,6 @@
            iframeContainerHeight: 700,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
          });
       });
-     </script>
-
     </script>
   </head>
 

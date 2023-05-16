@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <script>
+      globalThis.document.addEventListener('DOMContentLoaded', () => {
+        globalThis.EBWidgets.createWidget({
+          widgetType: 'checkout',
+          eventId: '631211098387',
+          modal: true,
+          modalTriggerElementId: 'eventbrite-widget-modal-trigger-631211098387'
+        });
+
+        // TODO would be great if this could be conditionally loaded based on desktop breakpoint
+        // https://github.com/AnalogStudiosRI/www.blissfestri.com/issues/77
+        // TODO figure out how to get a title attribute out of iframe embed
+        // https://github.com/AnalogStudiosRI/www.blissfestri.com/issues/76
+        globalThis.EBWidgets.createWidget({
+           // Required
+           widgetType: 'checkout',
+           eventId: '631211098387',
+           iframeContainerId: 'eventbrite-widget-container-631211098387',
+
+           // Optional
+           iframeContainerHeight: 700,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+         });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1
+      class="font-secondary text-5xl text-primary text-center"
+    >
+      Tickets
+    </h1>
+
+    <div class="text-center mt-4 lg:hidden">
+      <button id="eventbrite-widget-modal-trigger-631211098387" type="button">
+        <img
+          src="/assets/images/get-tickets.webp"
+          class="w-2/5 mr-auto ml-auto"
+          alt="Get tickets stub"
+          height="101"
+          width="200"
+        />
+      </button>
+
+      <hr class="mt-4 mb-4"/>
+    </div>
+
+    <div>
+      
+    </div>
+    <div class="mt-8 text-left md:ml-44 lg:w-2/5 lg:ml-44 xl:ml-52">
+      <h2
+        class="font-primary text-primary text-2xl uppercase font-extrabold mb-2"
+      >
+        <img
+          src="/assets/images/ga-ticket.webp"
+          class="inline-block w-1/4 md:w-1/5"
+          alt="General Admission ticket stub"
+          height="101"
+          width="200"
+        />
+        General Admission (&dollar;25)
+      </h2>
+      <p class="font-primary text-primary text-left md:w-3/4">
+        This tickets affords admission for one adult (18+) with access to the entrance gallery, main hall, and vendors gallery.
+      </p>
+    </div>
+
+    <div class="mt-8 text-left md:ml-44 lg:w-2/5 lg:ml-44 xl:ml-52">
+      <h2
+        class="font-primary text-primary text-2xl uppercase font-extrabold mb-2"
+      >
+        <img
+          src="/assets/images/vip-ticket.webp"
+          class="inline-block w-1/4 md:w-1/5"
+          alt="VIP ticket stub"
+          height="101"
+          width="200"
+        />
+        VIP (&dollar;35)
+      </h2>
+      <p class="font-primary text-primary text-left md:w-3/4">
+        Includes GA and access to the mezzanine section and green room, a 10% off merch coupon code, and complimentary snacks and refreshments.
+      </p>
+    </div>
+
+    <div
+      id="eventbrite-widget-container-631211098387"
+      class="hidden lg:inline-block w-1/3 float-right -mt-72 mr-24 bg-slate-50 h-96 xl:w-2/5"
+    ></div>
+  </body>
+
+</html>

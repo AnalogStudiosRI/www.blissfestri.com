@@ -2,7 +2,7 @@ export default class TicketInfo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="ticket-info font-primary bg-primary text-primary text-center p-4 m-4"
+        class="wavy-edges ticket-info font-primary bg-primary text-primary text-center p-4 m-4"
       >
         <div class="w-1/2 mr-auto ml-auto">
           <a href="/tickets/">

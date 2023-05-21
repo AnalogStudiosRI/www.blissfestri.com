@@ -2,7 +2,7 @@ export default class Lineup extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
+        class="lineup p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
       >
         <div
           class="bg-white opacity-70 pt-4"

@@ -3,18 +3,24 @@
   <head>
     <script type="module" src="../components/event-details/event-details.js" data-gwd-opt="static"></script>
     <script type="module" src="../components/newsletter-signup/newsletter-signup.js" data-gwd-opt="static"></script>
+    <script type="module" src="../components/lineup/lineup.js" data-gwd-opt="static"></script>
   </head>
 
   <body>
-    <bf-event-details
-      class="block text-center xl:inline-block xl:w-8/12 align-top"
-    >
-    </bf-event-details>
+    <div class="text-left xl:w-full xl:block xl:text-center">
+      <bf-event-details
+        class="block text-center xl:inline-block xl:w-8/12 align-top"
+      >
+      </bf-event-details>
 
-    <bf-newsletter-signup
-      class="xl:inline-block xl:w-2/12 xl:align-text-bottom"
-    >
-    </bf-newsletter-signup>
+      <div class="xl:w-8/12 mr-auto ml-auto">
+        <bf-lineup
+          class="block m-8"
+        ></bf-lineup>
+
+        <bf-newsletter-signup></bf-newsletter-signup>
+      </div>
+    </div>
   </body>
 
 </html>

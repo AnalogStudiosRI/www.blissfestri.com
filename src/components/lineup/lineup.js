@@ -8,7 +8,7 @@ export default class Lineup extends HTMLElement {
           class="bg-white opacity-70 pt-4"
         >
           <h2
-            class="text-center text-5xl uppercase font-primary font-extrabold mb-8 scale-x-125 scale-y-150"
+            class="text-center text-5xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
           >
             Lineup
           </h2>
@@ -26,7 +26,7 @@ export default class Lineup extends HTMLElement {
           >
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
-              Z-Boys
+              The Z-Boys
             </li>
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>

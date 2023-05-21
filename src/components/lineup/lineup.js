@@ -14,10 +14,10 @@ export default class Lineup extends HTMLElement {
           </h2>
 
           <ul class="font-extrabold text-center text-3xl uppercase md:w-3/4 md:ml-auto md:mr-auto">
-            <li class="md:inline">Analog</li>
+            <li class="md:inline">Jabbawaukee</li>
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-4 md:inline"/>
-              Bill Bartholomew
+              Analog
             </li>
           </ul>
 
@@ -30,7 +30,11 @@ export default class Lineup extends HTMLElement {
             </li>
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
-              Allison Cowrey
+              Allysen Callery
+            </li>
+            <li class="md:inline">
+              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              Bill Bartholomew
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
             </li>
           </ul>

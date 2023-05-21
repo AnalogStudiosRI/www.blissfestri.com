@@ -25,13 +25,13 @@ export default class Lineup extends HTMLElement {
             class="font-bold text-center text-2xl uppercase md:w-2/3 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="4%" class="hidden m-2 md:inline"/>
+              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
               Z-Boys
             </li>
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="4%" class="hidden m-2 md:inline"/>
+              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
               Allison Cowrey
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="4%" class="hidden m-2 md:inline"/>
+              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
             </li>
           </ul>
 

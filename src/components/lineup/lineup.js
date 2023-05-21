@@ -2,8 +2,7 @@ export default class Lineup extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="p-6 font-primary w-full bg-no-repeat bg-[url('https://raw.githubusercontent.com/AnalogStudiosRI/www.blissfestri.com/e27230cdf8bac89f9f7503897128ed17830fb129/src/assets/images/iyrs-campus-ariel.webp')]"
-        style="background-size: 100%;"
+        class="p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
       >
         <div
           class="bg-white opacity-70"
@@ -23,7 +22,9 @@ export default class Lineup extends HTMLElement {
             <li class="text-center">Allison Cowrey</li>
           </ul>
 
-          <p class="mt-8 italic text-center">More artist announcements coming soon.  Lineup is schedule to change.</p>
+          <p class="mt-8 italic text-center">
+            More artist announcements coming soon.  Lineup is schedule to change.
+          </p>
         </div>
       </div>
     `;

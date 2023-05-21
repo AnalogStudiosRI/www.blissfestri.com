@@ -5,12 +5,12 @@ export default class Navigation extends HTMLElement {
       {
         name: 'Home',
         url: '/'
-      }, {
-        name: 'About',
-        url: '/about/'
-      }, {
-        name: 'Lineup',
-        url: '/lineup/'
+      // }, {
+      //   name: 'About',
+      //   url: '/about/'
+      // }, {
+      //   name: 'Lineup',
+      //   url: '/lineup/'
       }, {
         name: 'Tickets',
         url: '/tickets/'
@@ -20,6 +20,9 @@ export default class Navigation extends HTMLElement {
       }, {
         name: 'Contact',
         url: '/contact/'
+      // }, {
+      //   name: 'News',
+      //   url: '/news/'
       }
     ];
   }
@@ -37,8 +40,8 @@ export default class Navigation extends HTMLElement {
       });
     } else {
       this.innerHTML = `
-        <nav class="bg-primary font-secondary w-1/2 lg:w-full">
-          <ul class="text-white text-center">
+        <nav class="bg-primary font-secondary">
+          <ul class="text-white text-center mr-auto ml-auto">
           ${
             navLinks.map((link) => {
               const { name, url } = link;
@@ -46,7 +49,7 @@ export default class Navigation extends HTMLElement {
               const activePath = path === url;
 
               return `
-                <li class="m-2 md:m-4 text-center text-3xl inline-block w-1/4 lg:w-1/12 lg:text-4xl">
+                <li class="m-2 text-center text-3xl inline-block md:m-4 lg:text-4xl">
                   <a
                     class="nav-link ${activePath ? 'text-tertiary' : 'text-white'} hover:text-tertiary"
                     href="${url}"

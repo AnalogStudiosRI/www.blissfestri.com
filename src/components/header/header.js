@@ -1,3 +1,5 @@
+import '../navigation/navigation.js';
+
 export default class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -6,7 +8,7 @@ export default class Header extends HTMLElement {
       >
         <div class="text-center bg-primary">
           <img
-            class="inline-block w-2/3 pt-5 pb-5 lg:w-1/2"
+            class="inline-block w-2/3 pt-4 pb-4 lg:w-1/2"
             src="/assets/images/blissfest-logo-sm.webp"
             width="500"
             height="123"
@@ -16,6 +18,8 @@ export default class Header extends HTMLElement {
             alt="Blissfest logo"
           />
         </div>
+
+        <bf-navigation></bf-navigation>
       </header>
     `;
   }

@@ -2,10 +2,10 @@ export default class Lineup extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="lineup p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
+        class="lineup rounded-lg p-2 md:p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
       >
         <div
-          class="bg-white opacity-70 pt-4"
+          class="bg-white opacity-70 pt-4 rounded-lg"
         >
           <h2
             class="text-center text-5xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
@@ -22,7 +22,7 @@ export default class Lineup extends HTMLElement {
           </ul>
 
           <ul
-            class="font-bold text-center text-2xl uppercase md:w-2/3 md:ml-auto md:mr-auto"
+            class="font-bold text-center text-2xl uppercase md:w-2/3 xl:w-1/2 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>

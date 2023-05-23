@@ -13,8 +13,9 @@ export default class Header extends HTMLElement {
             width="500"
             height="123"
             srcset="/assets/images/blissfest-logo-sm.webp 500w,
-                    /assets/images/blissfest-logo-md.webp 1000w,
-                    /assets/images/blissfest-logo-lg.webp 1500w"
+                    /assets/images/blissfest-logo-md.webp 750w,
+                    /assets/images/blissfest-logo-lg.webp 1000w,
+                    /assets/images/blissfest-logo-xl.webp 1500w"
             alt="Blissfest logo"
           />
         </div>

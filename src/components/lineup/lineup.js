@@ -26,15 +26,15 @@ export default class Lineup extends HTMLElement {
           >
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              Bill Bartholomew
+            </li>
+            <li class="md:inline">
+              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
               The Z-Boys
             </li>
             <li class="md:inline">
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
               Allysen Callery
-            </li>
-            <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
-              Bill Bartholomew
               <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
             </li>
           </ul>

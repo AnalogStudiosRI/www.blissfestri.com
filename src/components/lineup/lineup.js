@@ -13,29 +13,59 @@ export default class Lineup extends HTMLElement {
             Lineup
           </h2>
 
-          <ul class="font-extrabold text-center text-3xl uppercase md:w-3/4 md:ml-auto md:mr-auto">
+          <ul class="font-extrabold text-center text-4xl uppercase md:w-3/4 md:ml-auto md:mr-auto">
             <li class="md:inline">Jabbawaukee</li>
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-4 md:inline"/>
+              <img
+                src="/assets/images/star.webp"
+                alt="Artist name separator"
+                width="85"
+                height=85"
+                class="hidden m-2 md:inline w-1/12 scale-50"
+              />
               Analog
             </li>
           </ul>
 
           <ul
-            class="font-bold text-center text-2xl uppercase md:w-2/3 xl:w-1/2 md:ml-auto md:mr-auto"
+            class="font-bold text-center text-3xl uppercase md:w-2/3 xl:w-1/2 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              <img
+                src="/assets/images/star.webp"
+                alt="Artist name separator"
+                width="85"
+                height=85"
+                class="hidden m-2 md:inline w-1/12 scale-50"
+              />
               Bill Bartholomew
             </li>
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              <img
+                src="/assets/images/star.webp"
+                alt="Artist name separator"
+                width="85"
+                height=85"
+                class="hidden m-2 md:inline w-1/12 scale-50"
+              />
               The Z-Boys
             </li>
             <li class="md:inline">
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              <img
+                src="/assets/images/star.webp"
+                alt="Artist name separator"
+                width="85"
+                height=85"
+                class="hidden m-2 md:inline w-1/12 scale-50"
+              />
               Allysen Callery
-              <img src="/assets/images/star.webp" alt="Artist name separator" width="3%" class="hidden m-2 md:inline"/>
+              <img
+                src="/assets/images/star.webp"
+                alt="Artist name separator"
+                width="85"
+                height=85"
+                class="hidden m-2 md:inline w-1/12 scale-50"
+              />
             </li>
           </ul>
 

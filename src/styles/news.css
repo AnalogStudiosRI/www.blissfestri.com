@@ -9,7 +9,7 @@ ul {
 }
 
 li {
-  @apply text-2xl p-1 font-primary underline
+  @apply text-2xl p-1 font-primary underline;
 }
 
 span.publish-date {

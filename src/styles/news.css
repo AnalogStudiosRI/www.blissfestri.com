@@ -1,0 +1,29 @@
+@import './theme.css';
+
+h1 {
+  @apply font-secondary text-center text-primary text-5xl;
+}
+
+ul {
+  @apply mt-4 mb-4 text-center;
+}
+
+li {
+  @apply text-2xl p-1 font-primary underline
+}
+
+span.publish-date {
+  @apply block mt-4 mb-8 font-primary italic text-lg text-center;
+}
+
+p {
+  @apply font-primary text-2xl w-4/5 text-left mr-auto ml-auto mt-4 mb-4 lg:w-2/3 xl:w-1/2;
+}
+
+img.hero {
+  @apply mr-auto ml-auto;
+}
+
+a {
+  @apply underline;
+}

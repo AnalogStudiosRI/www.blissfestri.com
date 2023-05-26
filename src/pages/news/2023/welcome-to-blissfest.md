@@ -22,6 +22,7 @@ Although more artists will get added over the next couple of weeks, we are thril
 - Bill Bartholomew
 - The Z-Boys
 - Allysen Callery
+- Nate Farrar
 
 You can head on over to the [tickets](/tickets/) page to get your spot in line, or check out [the FAQ page](/faq/) for general information about the event.  Any remaining questions?  Visit our [contact](/contact/) page and shoot us a message!
 

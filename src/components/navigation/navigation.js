@@ -18,11 +18,11 @@ export default class Navigation extends HTMLElement {
         name: 'FAQ',
         url: '/faq/'
       }, {
+        name: 'News',
+        url: '/news/'
+      }, {
         name: 'Contact',
         url: '/contact/'
-      // }, {
-      //   name: 'News',
-      //   url: '/news/'
       }
     ];
   }

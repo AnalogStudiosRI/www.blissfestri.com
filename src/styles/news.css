@@ -1,0 +1,27 @@
+#news h1 {
+  @apply font-secondary text-center text-primary text-5xl;
+}
+
+#news ul {
+  @apply mt-4 mb-4 text-center;
+}
+
+#news li {
+  @apply text-2xl p-1 font-primary underline;
+}
+
+#news span.publish-date {
+  @apply block mt-4 mb-8 font-primary italic text-lg text-center;
+}
+
+#news p {
+  @apply font-primary text-xl w-4/5 text-left mr-auto ml-auto mt-6 mb-4 md:text-2xl lg:w-1/2 xl:w-2/5;
+}
+
+#news img {
+  @apply mr-auto ml-auto;
+}
+
+#news a {
+  @apply underline;
+}

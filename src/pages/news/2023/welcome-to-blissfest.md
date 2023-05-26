@@ -4,7 +4,7 @@ template: news
 
 # Welcome to Blissfest!
 
-<span class="publish-date">Published: May XX, 2023</span>
+<span class="publish-date">Published: May 26, 2023</span>
 
 <img
   src="/assets/images/blissfest-icon-sm.webp"

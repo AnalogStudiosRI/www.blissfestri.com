@@ -20,7 +20,9 @@ export default class Header extends HTMLElement {
           />
         </div>
 
-        <bf-navigation></bf-navigation>
+        <!-- cover up underlying background color by shifting this up a bit -->
+        <!-- https://github.com/AnalogStudiosRI/www.blissfestri.com/pull/90 -->
+        <bf-navigation class="block -mt-2 pb-2"></bf-navigation>
       </header>
     `;
   }

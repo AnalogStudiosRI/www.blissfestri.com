@@ -10,7 +10,7 @@ template: news
   src="/assets/images/blissfest-icon-sm.webp"
   width="150"
   height="150"
-  class="hero"
+  alt="Blissfest icon"
 />
 
 We at Analog Studios are excited to formally announce our kickoff for Blissfest 2023, taking place this year at IYRS!  We are looking forward to being able to expand out and take advantage of the space, hospitality, and the opportunity IYRS can offer us as we bring some of the best local indie music to downtown Newport this year.

@@ -7,7 +7,7 @@ template: news
 <span class="publish-date">Published: May XX, 2023</span>
 
 <img
-  src="/assets/images/blissfest-icon-og.png"
+  src="/assets/images/blissfest-icon-sm.webp"
   width="150"
   height="150"
   class="hero"

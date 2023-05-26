@@ -28,7 +28,7 @@ export default class Lineup extends HTMLElement {
           </ul>
 
           <ul
-            class="font-bold text-center text-3xl uppercase md:w-2/3 xl:w-1/2 md:ml-auto md:mr-auto"
+            class="font-bold text-center text-3xl md:text-2xl uppercase md:w-2/3 xl:w-3/4 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               <img
@@ -66,6 +66,9 @@ export default class Lineup extends HTMLElement {
                 height=85"
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
+            </li>
+            <li class="md:block lg:inline">
+              Nate Farrar
             </li>
           </ul>
 

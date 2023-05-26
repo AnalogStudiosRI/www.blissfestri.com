@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../assets/fonts/montserrat-regular.ttf') format('ttf');
+  src: url('/assets/fonts/montserrat-regular.ttf') format('ttf');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Citrus Gothic';
-  src: url('../assets/fonts/citrus-gothic-rough-regular.woff2') format('woff2');
+  src: url('/assets/fonts/citrus-gothic-rough-regular.woff2') format('woff2');
   font-display: swap;
 }
 

@@ -73,7 +73,7 @@ export default class Lineup extends HTMLElement {
           </ul>
 
           <p class="mt-8 italic text-center">
-            More artist announcements coming soon.  Lineup is schedule to change.
+            More artist announcements coming soon.  Lineup is subject to change.
           </p>
         </div>
       </div>

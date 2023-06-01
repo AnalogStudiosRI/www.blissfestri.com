@@ -49,10 +49,18 @@ export default class Footer extends HTMLElement {
           </a>
         </div>
 
-        <small
-          class="text-white text-xs font-primary"
-        >
-          Copyright &copy; Analog Studios. All Rights Reserved.
+        <small class="text-white text-xs font-primary">
+          Copyright &copy;
+
+          <a
+            href="https://www.analogstudios.net"
+            title="Analog Studios website"
+            aria-label="Analog Studios website"
+          >
+            Analog Studios
+          </a>.
+
+          All Rights Reserved.
         </small>
       </footer>
     `;

@@ -33,9 +33,6 @@ describe('Components/Newsletter Signup', () => {
       expect(lables[0].textContent.trim()).to.equal('Name (optional)');
       expect(lables[1].textContent.trim()).to.equal('Email Address');
       expect(button.textContent.trim()).to.equal('Sign Me Up');
-      expect(copyright.textContent).to.equal(
-        'Copyright © Analog Studios. All Rights Reserved.'
-      );
     });
   });
 

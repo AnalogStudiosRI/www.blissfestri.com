@@ -57,7 +57,7 @@ describe('Components/Footer', () => {
         expect(copyright[0].textContent.replace(/ /g, '').replace(/\n/g, '')).to.equal('Copyright©AnalogStudios.AllRightsReserved.');
       });
 
-      it('should have the expected privacy policy notice', () => {
+      it('should have the expected privacy policy page link', () => {
         const privacyContainer = document.querySelectorAll('[aria-label="Privacy Policy"]');
         const privacyLink = privacyContainer[0].querySelectorAll('a');
 

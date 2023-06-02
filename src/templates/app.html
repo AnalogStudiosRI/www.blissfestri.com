@@ -16,15 +16,18 @@
 
     <link rel="stylesheet" href="../styles/main.css" data-gwd-opt="inline"/>
     <script type="module" src="../components/header/header.js" data-gwd-opt="static"></script>
+    <script type="module" src="../components/footer/footer.js" data-gwd-opt="static"></script>
     <script type="module" src="../components/navigation/navigation.js""></script>
   </head>
 
   <body>
     <bf-header></bf-header>
 
-    <main class="p-4 xl:block mr-auto ml-auto xl:w-full">
+    <main class="p-4 xl:block mr-auto ml-auto xl:w-full min-h-screen">
       <page-outlet></page-outlet>
     </main>
+
+    <bf-footer class="block mt-8"></bf-footer>
   </body>
 
 </html>

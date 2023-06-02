@@ -2,7 +2,7 @@ export default class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer
-        class="bg-[url('/assets/images/tear-strip-upside-down.webp')] pt-16 bg-repeat-x bg-top text-center"
+        class="bg-[url('/assets/images/tear-strip-upside-down.webp')] pt-16 pb-4 bg-repeat-x bg-top text-center"
       >
         <div class="flex gap-x-4 justify-center mb-4">
           <a

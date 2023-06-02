@@ -49,7 +49,10 @@ export default class Footer extends HTMLElement {
           </a>
         </div>
 
-        <small class="text-white text-xs font-primary">
+        <small
+          class="text-white text-xs font-primary"
+          aria-label="Copyright Notice"
+        >
           Copyright &copy;
 
           <a
@@ -62,6 +65,19 @@ export default class Footer extends HTMLElement {
 
           All Rights Reserved.
         </small>
+
+        <small
+          class="block text-white font-primary"
+          aria-label="Privacy Policy"
+        >
+          <a
+            href="/privacy-policy/"
+            title="Blissfest Privacy Policy" class="underline"
+          >
+            Privacy Policy
+          </a>
+        </small>
+
       </footer>
     `;
   }

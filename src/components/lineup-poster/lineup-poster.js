@@ -1,4 +1,4 @@
-export default class Lineup extends HTMLElement {
+export default class LineupPoster extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
@@ -81,4 +81,4 @@ export default class Lineup extends HTMLElement {
   }
 }
 
-customElements.define('bf-lineup', Lineup);
+customElements.define('bf-lineup-poster', LineupPoster);

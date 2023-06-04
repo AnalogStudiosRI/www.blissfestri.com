@@ -1,11 +1,11 @@
 import { expect } from '@esm-bundle/chai';
-import './lineup.js';
+import './lineup-poster.js';
 
-describe('Components/Lineup', () => {
+describe('Components/Lineup Poster', () => {
   let lineup;
 
   before(async () => {
-    lineup = document.createElement('bf-lineup');
+    lineup = document.createElement('bf-lineup-poster');
     document.body.appendChild(lineup);
 
     await lineup.updateComplete;

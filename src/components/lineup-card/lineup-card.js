@@ -5,19 +5,21 @@ function getSocialLinksList(socials) {
     const formattedTitle = `${name}'s ${label.charAt(0).toUpperCase()}${label.slice(1)} page`;
 
     return `
-      <a
-        href="${link}"
-        aria-label="${formattedTitle}"
-        title="${name}'s ${formattedTitle} page"
-      >
-        <img
-          src="/assets/images/${label}-icon.png"
-          alt="${formattedTitle}"
-          width="40"
-          height="40"
-          loading="lazy"
-        />
-      </a>
+      <li>
+        <a
+          href="${link}"
+          aria-label="${formattedTitle}"
+          title="${name}'s ${formattedTitle} page"
+        >
+          <img
+            src="/assets/images/${label}-icon.png"
+            alt="${formattedTitle}"
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </li>
     `;
   }).join('');
 

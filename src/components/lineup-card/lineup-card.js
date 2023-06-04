@@ -63,17 +63,18 @@ class LineupCard extends HTMLElement {
       : 'mt-4';
 
     this.innerHTML = `
-      <div class="flex flex-row flex-wrap w-full">
-        <div class="flex-column flex-1">
+      <div class="flex flex-row">
+        <div class="w-1/3 md:w-1/5 lg:w-1/6">
           <div class="text-center ${rotationClass} ${rotationMargin}">
             <img
-              class="bg-slate-50 pb-4 pl-1 pr-1 pt-1 inline-block w-2/3 drop-shadow-lg lg:pb-16 lg:pl-4 lg:pr-4 lg:pt-4"
+              class="bg-slate-50 ml-4 pb-8 pl-2 pr-2 pt-2 drop-shadow-lg lg:pb-12 lg:pl-4 lg:pr-4 lg:pt-4"
               src="${picture}"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
         </div>
 
-        <div class="flex-column flex-1 pl-4">
+        <div class="w-1/2 ml-16 lg:w-2/5">
           <h2 class="text-4xl bold font-primary text-primary uppercase">${name}<h2>
           <p class="font-primary">${bio}</p>
           ${getSocialLinksList(socials)}

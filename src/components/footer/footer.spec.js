@@ -20,7 +20,7 @@ describe('Components/Footer', () => {
     it('should have the expected number of links on the page', () => {
       const links = document.querySelectorAll('a');
 
-      expect(links.length).to.equal(5);
+      expect(links.length).to.equal(6);
     });
 
     describe('Social Icon Links', () => {
@@ -58,12 +58,17 @@ describe('Components/Footer', () => {
       });
 
       it('should have the expected privacy policy page link', () => {
-        const privacyContainer = document.querySelectorAll('[aria-label="Privacy Policy"]');
-        const privacyLink = privacyContainer[0].querySelectorAll('a');
+        const privacyLink = document.querySelectorAll('[href="/privacy-policy/"]');
 
-        expect(privacyContainer.length).to.equal(1);
-        expect(privacyLink[0].getAttribute('href')).to.equal('/privacy-policy/');
+        expect(privacyLink.length).to.equal(1);
         expect(privacyLink[0].textContent.replace(/ /g, '').replace(/\n/g, '')).to.equal('PrivacyPolicy');
+      });
+
+      it('should have the expected terms of use link', () => {
+        const termsLink = document.querySelectorAll('[href="/terms-of-use/"]');
+
+        expect(termsLink.length).to.equal(1);
+        expect(termsLink[0].textContent.replace(/ /g, '').replace(/\n/g, '')).to.equal('TermsofUse');
       });
     });
   });

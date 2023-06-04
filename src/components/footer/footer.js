@@ -68,14 +68,20 @@ export default class Footer extends HTMLElement {
 
         <small
           class="block text-white font-primary"
-          aria-label="Privacy Policy"
         >
           <a
             href="/privacy-policy/"
             title="Blissfest Privacy Policy" class="underline"
           >
-            Privacy Policy
-          </a>
+            Privacy Policy</a>
+
+          <span> | </span>
+
+          <a
+            href="/terms-of-use/"
+            title="Blissfest Terms of Use" class="underline"
+          >
+            Terms of Use</a>
         </small>
 
       </footer>

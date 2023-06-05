@@ -61,10 +61,14 @@ describe('Components/Lineup Card', () => {
 
       expect(list.length).to.equal(0);
     });
+
+    after(() => {
+      card.remove();
+      card = null;
+    });  
   });
 
-  // TODO this fails when enabled, duplicate querySelectorAll results?
-  xdescribe('Social Links Behavior', () => {
+  describe('Social Links Behavior', () => {
     before(async () => {
       card = document.createElement('bf-lineup-card');
       card.setAttribute('name', MOCK_ARTIST.name);
@@ -157,6 +161,11 @@ describe('Components/Lineup Card', () => {
         expect(icon[0].getAttribute('src')).to.include(social);
       });
     });
+
+    after(() => {
+      card.remove();
+      card = null;
+    });  
   });
 
   describe('Rotate Right Behavior', () => {

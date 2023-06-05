@@ -1,5 +1,6 @@
 import '../../styles/theme.css';
 import './lineup-card.js';
+import { MOCK_ARTIST } from './mock-artist.js';
 
 export default {
   title: 'Components/Lineup Card'
@@ -30,9 +31,9 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   props: {
-    name: 'Analog',
-    bio: 'The name of the band is analog. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    picture: 'https://d34k5cjnk2rcze.cloudfront.net/images/artists/analog.jpg'
+    name: MOCK_ARTIST.name,
+    bio: MOCK_ARTIST.bio,
+    picture: MOCK_ARTIST.picture
   }
 };
 
@@ -40,12 +41,7 @@ export const Socials = Template.bind({});
 
 Socials.args = {
   props: {
-    name: 'Analog',
-    bio: 'The name of the band is analog. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    picture: 'https://d34k5cjnk2rcze.cloudfront.net/images/artists/analog.jpg',
-    instagram: 'https://www.instagram.com/dave.flamand/',
-    facebook: 'https://www.facebook.com',
-    youtube: 'https://www.youtube.com'
+    ...MOCK_ARTIST
   }
 };
 
@@ -53,13 +49,8 @@ export const RotationRight = Template.bind({});
 
 RotationRight.args = {
   props: {
-    name: 'Analog',
-    bio: 'The name of the band is analog. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    picture: 'https://d34k5cjnk2rcze.cloudfront.net/images/artists/analog.jpg',
-    rotation: 'right',
-    instagram: 'https://www.instagram.com/dave.flamand/',
-    facebook: 'https://www.facebook.com',
-    youtube: 'https://www.youtube.com'
+    ...MOCK_ARTIST,
+    rotation: 'right'
   }
 };
 
@@ -67,12 +58,7 @@ export const RotationLeft = Template.bind({});
 
 RotationLeft.args = {
   props: {
-    name: 'Analog',
-    bio: 'The name of the band is analog. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    picture: 'https://d34k5cjnk2rcze.cloudfront.net/images/artists/analog.jpg',
-    rotation: 'left',
-    instagram: 'https://www.instagram.com/dave.flamand/',
-    facebook: 'https://www.facebook.com',
-    youtube: 'https://www.youtube.com'
+    ...MOCK_ARTIST,
+    rotation: 'left'
   }
 };

@@ -1,5 +1,5 @@
 // TODO could  make this as its own component, e.g. `<bf-social-icon>` (see footer component)
-function getSocialLinksList(socials) {
+function getSocialLinksList(name, socials) {
   const socialLinkItems = Object.entries(socials).filter(social => social[1]).map(social => {
     const [label, link] = social;
     const formattedTitle = `${name}'s ${label.charAt(0).toUpperCase()}${label.slice(1)} page`;
@@ -8,8 +8,7 @@ function getSocialLinksList(socials) {
       <li>
         <a
           href="${link}"
-          aria-label="${formattedTitle}"
-          title="${name}'s ${formattedTitle} page"
+          title="${formattedTitle}"
         >
           <img
             src="/assets/images/${label}-icon.png"
@@ -42,8 +41,6 @@ class LineupCard extends HTMLElement {
   }
 
   connectedCallback() {
-    // link (optional) - website
-    // link (optional) - spotify
     const name = this.getAttribute('name');
     const bio = this.getAttribute('bio');
     const picture = this.getAttribute('picture');
@@ -63,23 +60,25 @@ class LineupCard extends HTMLElement {
       : 'mt-4';
 
     this.innerHTML = `
-      <div class="flex flex-row">
+      <article class="flex flex-row">
         <div class="w-1/3 md:w-1/5 lg:w-1/6">
           <div class="text-center ${rotationClass} ${rotationMargin}">
-            <img
-              class="bg-slate-50 ml-4 pb-8 pl-2 pr-2 pt-2 drop-shadow-lg lg:pb-12 lg:pl-4 lg:pr-4 lg:pt-4"
-              src="${picture}"
-              loading="lazy"
-            >
+            <picture>
+              <img
+                class="bg-slate-50 ml-4 pb-8 pl-2 pr-2 pt-2 drop-shadow-lg lg:pb-12 lg:pl-4 lg:pr-4 lg:pt-4"
+                src="${picture}"
+                alt="Picture of ${name}"
+              />
+            </picture>
           </div>
         </div>
 
         <div class="w-1/2 ml-16 lg:w-2/5">
-          <h2 class="text-4xl bold font-primary text-primary uppercase">${name}<h2>
+          <h2 class="text-4xl bold font-primary text-primary uppercase">${name}</h2>
           <p class="font-primary">${bio}</p>
-          ${getSocialLinksList(socials)}
+          ${getSocialLinksList(name, socials)}
         </div>
-      </div>
+      </article>
     `;
   }
 }

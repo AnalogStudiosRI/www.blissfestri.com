@@ -5,7 +5,7 @@ export default class LineupPoster extends HTMLElement {
         class="lineup rounded-lg p-2 md:p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
       >
         <div
-          class="bg-white opacity-70 pt-4 rounded-lg"
+          class="bg-white opacity-70 pt-4 rounded-lg overflow-hidden"
         >
           <h2
             class="text-center text-5xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"

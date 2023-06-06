@@ -17,7 +17,7 @@ describe('Components/Lineup Card', () => {
       card.setAttribute('picture', MOCK_ARTIST.picture);
 
       document.body.appendChild(card);
-  
+
       await card.updateComplete;
     });
 
@@ -65,7 +65,7 @@ describe('Components/Lineup Card', () => {
     after(() => {
       card.remove();
       card = null;
-    });  
+    });
   });
 
   describe('Social Links Behavior', () => {
@@ -82,37 +82,37 @@ describe('Components/Lineup Card', () => {
       });
 
       document.body.appendChild(card);
-  
+
       await card.updateComplete;
     });
 
     describe('default attributes', () => {
       it('should display the default name attribute value in the card', () => {
         const heading = document.querySelectorAll('h2');
-  
+
         expect(heading.length).to.equal(1);
         expect(heading[0].textContent).to.equal(MOCK_ARTIST.name);
       });
-  
+
       it('should display the bio attribute value in the card', () => {
         const paragraph = document.querySelectorAll('p');
-  
+
         expect(paragraph.length).to.equal(1);
         expect(paragraph[0].textContent).to.equal(MOCK_ARTIST.bio);
       });
-  
+
       it('should display the picture attribute value in the card', () => {
         const img = document.querySelectorAll('picture img');
-  
+
         expect(img.length).to.equal(1);
         expect(img[0].getAttribute('src')).to.equal(MOCK_ARTIST.picture);
         expect(img[0].getAttribute('alt')).to.equal(`Picture of ${MOCK_ARTIST.name}`);
       });
-  
+
       it('the image should not be rotated', () => {
         const container = document.querySelectorAll('div.rotate-0');
         const containsImage = container[0].querySelectorAll('picture img').length === 1;
-  
+
         expect(container.length).to.equal(1);
         expect(containsImage).to.equal(true);
       });
@@ -130,10 +130,10 @@ describe('Components/Lineup Card', () => {
           const title = getFormattedTitle(MOCK_ARTIST.name, social);
           const link = document.querySelectorAll(`ul li a[title="${title}"]`);
           const icon = document.querySelectorAll(`ul li a img[alt="${title}"`);
-  
+
           expect(link.length).to.equal(1);
           expect(link[0].getAttribute('href')).to.equal(MOCK_ARTIST[social]);
-  
+
           expect(icon.length).to.equal(1);
           expect(icon[0].getAttribute('src')).to.include(social);
         });
@@ -143,7 +143,7 @@ describe('Components/Lineup Card', () => {
     after(() => {
       card.remove();
       card = null;
-    });  
+    });
   });
 
   describe('Rotate Right Behavior', () => {
@@ -152,7 +152,7 @@ describe('Components/Lineup Card', () => {
       card.setAttribute('rotation', 'right');
 
       document.body.appendChild(card);
-  
+
       await card.updateComplete;
     });
 
@@ -176,7 +176,7 @@ describe('Components/Lineup Card', () => {
       card.setAttribute('rotation', 'left');
 
       document.body.appendChild(card);
-  
+
       await card.updateComplete;
     });
 

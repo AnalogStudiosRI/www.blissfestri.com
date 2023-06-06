@@ -19,25 +19,6 @@ export default {
   coverageConfig: {
     reportDir: './reports'
   },
-  // plugins: [{
-  //   name: 'import-css',
-  //   async transform(context) {
-  //     const { url } = context.request;
-  //     const shouldIntercept = await importCssResource.shouldIntercept(url, context.body, { request: context.headers });
-      
-  //     if (shouldIntercept) {
-  //       const cssResource = await importCssResource.intercept(url, context.body);
-  //       const { body, contentType } = cssResource;
-
-  //       return {
-  //         body,
-  //         headers: {
-  //           'content-type': contentType
-  //         }
-  //       };
-  //     }
-  //   }
-  // }],
   middleware: [
     function rewriteIndex(context, next) {
       const { url } = context.request;

@@ -54,7 +54,7 @@ describe('Components/Event Details', () => {
 
       expect(container.length).to.equal(1);
       expect(logo.length).to.equal(1);
-  
+
       expect(formatText(container[0].textContent)).to.equal('PresentedbyAnalogStudios');
       expect(logo[0].getAttribute('alt')).to.equal('Analog Studios logo');
       expect(logo[0].getAttribute('src')).to.not.equal('');

@@ -4,5 +4,8 @@ export const MOCK_ARTIST = {
   picture: 'https://d34k5cjnk2rcze.cloudfront.net/images/artists/analog.jpg',
   instagram: 'https://www.instagram.com/dave.flamand/',
   facebook: 'https://www.facebook.com',
-  youtube: 'https://www.youtube.com'
+  youtube: 'https://www.youtube.com',
+  website: 'https://www.analogstudios.net',
+  apple: 'https://www.apple.com',
+  spotify: 'https://www.spotify.com'
 };

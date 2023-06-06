@@ -69,14 +69,17 @@ describe('Components/Lineup Card', () => {
   });
 
   describe('Social Links Behavior', () => {
+    const SOCIALS = ['youtube', 'spotify', 'website', 'apple', 'instagram', 'facebook'];
+
     before(async () => {
       card = document.createElement('bf-lineup-card');
       card.setAttribute('name', MOCK_ARTIST.name);
       card.setAttribute('bio', MOCK_ARTIST.bio);
       card.setAttribute('picture', MOCK_ARTIST.picture);
-      card.setAttribute('instagram', MOCK_ARTIST.instagram);
-      card.setAttribute('facebook', MOCK_ARTIST.facebook);
-      card.setAttribute('youtube', MOCK_ARTIST.youtube);
+
+      SOCIALS.forEach(social => {
+        card.setAttribute(social, MOCK_ARTIST[social]);
+      });
 
       document.body.appendChild(card);
   
@@ -119,46 +122,21 @@ describe('Components/Lineup Card', () => {
       it('should display three social link items', () => {
         const items = document.querySelectorAll('ul li');
 
-        expect(items.length).to.equal(3);
+        expect(items.length).to.equal(SOCIALS.length);
       });
 
-      it('should display the instagram link', () => {
-        const social = 'instagram';
-        const title = getFormattedTitle(MOCK_ARTIST.name, social);
-        const link = document.querySelectorAll(`ul li a[title="${title}"]`);
-        const icon = document.querySelectorAll(`ul li a img[alt="${title}"`);
-
-        expect(link.length).to.equal(1);
-        expect(link[0].getAttribute('href')).to.equal(MOCK_ARTIST[social]);
-
-        expect(icon.length).to.equal(1);
-        expect(icon[0].getAttribute('src')).to.include(social);
-      });
-
-      it('should display the facebook link', () => {
-        const social = 'facebook';
-        const title = getFormattedTitle(MOCK_ARTIST.name, social);
-        const link = document.querySelectorAll(`ul li a[title="${title}"]`);
-        const icon = document.querySelectorAll(`ul li a img[alt="${title}"`);
-
-        expect(link.length).to.equal(1);
-        expect(link[0].getAttribute('href')).to.equal(MOCK_ARTIST[social]);
-
-        expect(icon.length).to.equal(1);
-        expect(icon[0].getAttribute('src')).to.include(social);
-      });
-
-      it('should display the youtube link', () => {
-        const social = 'youtube';
-        const title = getFormattedTitle(MOCK_ARTIST.name, social);
-        const link = document.querySelectorAll(`ul li a[title="${title}"]`);
-        const icon = document.querySelectorAll(`ul li a img[alt="${title}"`);
-
-        expect(link.length).to.equal(1);
-        expect(link[0].getAttribute('href')).to.equal(MOCK_ARTIST[social]);
-
-        expect(icon.length).to.equal(1);
-        expect(icon[0].getAttribute('src')).to.include(social);
+      it('should display all the social links', () => {
+        SOCIALS.forEach(social => {
+          const title = getFormattedTitle(MOCK_ARTIST.name, social);
+          const link = document.querySelectorAll(`ul li a[title="${title}"]`);
+          const icon = document.querySelectorAll(`ul li a img[alt="${title}"`);
+  
+          expect(link.length).to.equal(1);
+          expect(link[0].getAttribute('href')).to.equal(MOCK_ARTIST[social]);
+  
+          expect(icon.length).to.equal(1);
+          expect(icon[0].getAttribute('src')).to.include(social);
+        });
       });
     });
 

@@ -45,11 +45,12 @@ class LineupCard extends HTMLElement {
     const bio = this.getAttribute('bio');
     const picture = this.getAttribute('picture');
     const socials = {
-      // website: this.getAttribute('website'),
-      // spotify: this.getAttribute('spotify'),
+      apple: this.getAttribute('apple'),
       facebook: this.getAttribute('facebook'),
+      instagram: this.getAttribute('instagram'),
+      spotify: this.getAttribute('spotify'),
       youtube: this.getAttribute('youtube'),
-      instagram: this.getAttribute('instagram')
+      website: this.getAttribute('website')
     };
     const rotation = this.getAttribute('rotation');
     const rotationClass = rotation && this.ROTATION_CLASS_MAPPER[rotation]

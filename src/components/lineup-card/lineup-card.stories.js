@@ -7,11 +7,14 @@ export default {
 };
 
 const Template = ({ props }) => {
-  const { name, bio, picture, rotation, instagram, facebook, youtube } = props;
+  const { name, bio, picture, rotation, instagram, facebook, youtube, apple, website, spotify } = props;
   const rotationAttr = rotation ? `rotation="${rotation}"` : '';
   const instagramAttr = instagram ? `instagram="${instagram}"` : '';
   const facebookAttr = facebook ? `facebook="${facebook}"` : '';
   const youtubeAttr = youtube ? `youtube="${youtube}"` : '';
+  const appleAttr = youtube ? `apple="${apple}"` : '';
+  const websiteAttr = youtube ? `website="${website}"` : '';
+  const spotifyAttr = youtube ? `spotify="${spotify}"` : '';
 
   return `
     <bf-lineup-card
@@ -22,6 +25,9 @@ const Template = ({ props }) => {
       ${instagramAttr}
       ${facebookAttr}
       ${youtubeAttr}
+      ${appleAttr}
+      ${websiteAttr}
+      ${spotifyAttr}
     >
     </bf-lineup-card>
   `;

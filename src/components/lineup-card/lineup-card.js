@@ -1,4 +1,3 @@
-// TODO could  make this as its own component, e.g. `<bf-social-icon>` (see footer component)
 function getSocialLinksList(name, socials) {
   const socialLinkItems = Object.entries(socials).filter(social => social[1]).map(social => {
     const [label, link] = social;

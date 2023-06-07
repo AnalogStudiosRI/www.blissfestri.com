@@ -75,7 +75,8 @@ export default class EventDetails extends HTMLElement {
           alt="Map of Rhode Island counties"
         />
 
-        <div class="text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
+        <div class="flex flex-col md:flex-row text-left location pl-48 -mt-32 sm:pl-80 sm:pt-16 sm:mt-2 lg:mt-10 lg:ml-20">
+
           <img
             src="/assets/images/iyrs-logo.webp"
             alt="Iyrs logo"

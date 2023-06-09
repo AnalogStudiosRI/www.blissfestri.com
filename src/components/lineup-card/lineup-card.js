@@ -1,25 +1,27 @@
 function getSocialLinksList(name, socials) {
-  const socialLinkItems = Object.entries(socials).filter(social => social[1]).map(social => {
-    const [label, link] = social;
-    const formattedTitle = `${name}'s ${label.charAt(0).toUpperCase()}${label.slice(1)} page`;
+  const socialLinkItems = Object.entries(socials)
+    .filter(social => social[1] && social[1] !== 'undefined' && social[1] !== '')
+    .map(social => {
+      const [label, link] = social;
+      const formattedTitle = `${name}'s ${label.charAt(0).toUpperCase()}${label.slice(1)} page`;
 
-    return `
-      <li>
-        <a
-          href="${link}"
-          title="${formattedTitle}"
-        >
-          <img
-            src="/assets/images/${label}-icon.png"
-            alt="${formattedTitle}"
-            width="40"
-            height="40"
-            loading="lazy"
-          />
-        </a>
-      </li>
-    `;
-  }).join('');
+      return `
+        <li>
+          <a
+            href="${link}"
+            title="${formattedTitle}"
+          >
+            <img
+              src="/assets/images/${label}-icon.png"
+              alt="${formattedTitle}"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+        </li>
+      `;
+    }).join('');
 
   return socialLinkItems === ''
     ? ''

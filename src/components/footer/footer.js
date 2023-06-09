@@ -1,10 +1,10 @@
 export default class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <footer
-        class="bg-[url('/assets/images/tear-strip.webp')] transform rotate-180 h-44 bg-no-repeat bg-bottom text-center"
-      >
-        <div class="transform rotate-180 bg-primary pt-1 pb-4">
+      <footer class="text-center">
+        <div class="bg-[url('/assets/images/tear-strip.webp')] transform rotate-180 h-20 bg-no-repeat bg-top">
+        </div>
+        <div class="bg-primary pb-4">
           <div class="flex gap-x-4 justify-center mb-4">
             <a
               href="https://www.facebook.com/blissfestri/"

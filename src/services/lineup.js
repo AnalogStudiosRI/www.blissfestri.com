@@ -1,9 +1,5 @@
 /* eslint-disable max-len */
-// ~~Jabbawaukee~~
 // Analog
-// ~~Bill~~
-// ~~The Z-Boys~~
-// ~~Allysen Callery~~
 // Nate Farrar
 const LINEUP = [{
   name: 'Jabbawaukee',
@@ -70,7 +66,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/627JjqozdCkghNVTuxDQc2',
   youtube: '',
   apple: 'https://music.apple.com/us/artist/nate-farrar/211003726',
-  startTime: 1690666200000
+  startTime: 1690668900000
 }, {
   name: 'TBD',
   bio: '',

@@ -1,5 +1,5 @@
 import '../components/lineup-card/lineup-card.js';
-import { getLineup } from '../services/lineup.js';
+import { getLineup } from '../services/lineup-service.js';
 
 function formatStartTime(timestamp) {
   const time = new Date(timestamp);
@@ -10,12 +10,12 @@ function formatStartTime(timestamp) {
     ? `0${minutes}`
     : minutes;
 
-  return `${formattedHours}: ${formattedMinutes}`;
+  return `${formattedHours}:${formattedMinutes} pm`;
 }
 export default class LineupPage extends HTMLElement {
   constructor() {
     super();
-    this.lineup = getLineup();
+    this.lineup = getLineup().reverse();
   }
 
   connectedCallback() {
@@ -24,9 +24,12 @@ export default class LineupPage extends HTMLElement {
       const rotation = idx % 2 === 0 ? 'left' : 'right';
 
       return `
-        <div>
-          <span>${formatStartTime(startTime)}</span>
+        <div class="mt-4 mb-4">
+          <span class="inline-block text-center mb-8">
+            <span class="bg-primary text-5xl font-secondary text-secondary p-2">${formatStartTime(startTime)}</span>
+          </span>
           <bf-lineup-card
+            class="inline-block mb-24"
             rotation="${rotation}"
             name="${name}"
             bio="${bio}"
@@ -43,8 +46,8 @@ export default class LineupPage extends HTMLElement {
     }).join('');
 
     this.innerHTML = `
-      <h1 class="text-center">Lineup</h1>
-      <div>
+      <h1 class="text-center font-secondary text-5xl text-primary">Lineup</h1>
+      <div class="block">
         ${lineupContent}
       </div>
     `;

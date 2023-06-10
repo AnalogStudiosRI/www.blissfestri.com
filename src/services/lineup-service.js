@@ -47,7 +47,7 @@ const LINEUP = [{
   startTime: 1690674300000
 }, {
   name: 'Allysen Callery',
-  bio: 'Allysen Callery is a self taught singer songwriter from Bristol , Rhode Island , whose delicate, mesmerizing sound has been compared to classic British folk artists like Sandy Denny and Nick Drake.',
+  bio: 'Allysen Callery is a self taught singer songwriter from Bristol, Rhode Island, whose delicate, mesmerizing sound has been compared to classic British folk artists like Sandy Denny and Nick Drake.',
   picture: 'https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/338289986_1903874899972494_8661821939696629366_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=H9f9W4PeQTUAX-RXoM9&_nc_ht=scontent-bos5-1.xx&oh=00_AfDP3YqH0cX9IXL74YC_woL024vJO6IqMVCNpqb9B-wIRg&oe=64874727',
   facebook: 'https://www.facebook.com/allysencallerymusic/',
   instagram: 'https://www.instagram.com/allysencallery/',
@@ -68,7 +68,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/nate-farrar/211003726',
   startTime: 1690668900000
 }, {
-  name: 'TBD',
+  name: 'To Be Announced',
   bio: '',
   picture: 'https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg',
   startTime: 1690666200000

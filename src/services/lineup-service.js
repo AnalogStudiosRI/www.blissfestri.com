@@ -1,6 +1,4 @@
 /* eslint-disable max-len */
-// Analog
-// Nate Farrar
 const LINEUP = [{
   name: 'Jabbawaukee',
   bio: 'Jabbawaukee is a Southern New England based quartet playing psychedelic funk and jam rock!',

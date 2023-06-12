@@ -12,6 +12,7 @@ function formatStartTime(timestamp) {
 
   return `${formattedHours}:${formattedMinutes} pm`;
 }
+
 export default class LineupPage extends HTMLElement {
   constructor() {
     super();
@@ -25,11 +26,12 @@ export default class LineupPage extends HTMLElement {
 
       return `
         <div class="mt-4 mb-4">
-          <span class="inline-block text-center mb-8">
-            <span class="bg-primary text-5xl font-secondary text-secondary p-2">${formatStartTime(startTime)}</span>
+          <span class="inline-block align-top text-center mb-8 mr-8">
+            <span class="bg-primary text-3xl lg:text-5xl font-secondary text-secondary p-2">${formatStartTime(startTime)}</span>
           </span>
+
           <bf-lineup-card
-            class="inline-block mb-24"
+            class="inline-block mb-24 lg:w-3/4"
             rotation="${rotation}"
             name="${name}"
             bio="${bio}"
@@ -46,8 +48,8 @@ export default class LineupPage extends HTMLElement {
     }).join('');
 
     this.innerHTML = `
-      <h1 class="text-center font-secondary text-5xl text-primary">Lineup</h1>
-      <div class="block">
+      <h1 class="text-center font-secondary text-5xl text-primary mb-8">Lineup</h1>
+      <div class="block lg:w-5/6 lg:mr-auto lg:ml-auto">
         ${lineupContent}
       </div>
     `;

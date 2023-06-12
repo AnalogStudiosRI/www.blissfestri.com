@@ -6,7 +6,7 @@ function getSocialLinksList(name, socials) {
       const formattedTitle = `${name}'s ${label.charAt(0).toUpperCase()}${label.slice(1)} page`;
 
       return `
-        <li>
+        <li class="inline-block md:mr-4">
           <a
             href="${link}"
             title="${formattedTitle}"
@@ -14,6 +14,7 @@ function getSocialLinksList(name, socials) {
             <img
               src="/assets/images/${label}-icon.png"
               alt="${formattedTitle}"
+              class="w-5/6 md:w-full"
               width="40"
               height="40"
               loading="lazy"
@@ -25,7 +26,7 @@ function getSocialLinksList(name, socials) {
 
   return socialLinkItems === ''
     ? ''
-    : `<ul class="flex gap-x-4 mt-4 mb-4">
+    : `<ul class="mt-4">
         ${socialLinkItems}
       </ul>`;
 }
@@ -63,7 +64,7 @@ class LineupCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="flex flex-row">
-        <div class="w-1/3 md:w-1/5 lg:w-1/6">
+        <div class="w-1/3">
           <div class="text-center ${rotationClass} ${rotationMargin}">
             <picture>
               <img
@@ -76,8 +77,8 @@ class LineupCard extends HTMLElement {
         </div>
 
         <div class="w-1/2 ml-16 lg:w-2/5">
-          <h2 class="text-4xl bold font-primary text-primary uppercase">${name}</h2>
-          <p class="font-primary">${bio}</p>
+          <h2 class="text-2xl md:text-4xl bold font-primary text-primary uppercase">${name}</h2>
+          <p class="font-primary md:text-2xl">${bio}</p>
           ${getSocialLinksList(name, socials)}
         </div>
       </article>

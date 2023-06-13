@@ -67,7 +67,13 @@ const LINEUP = [{
   startTime: 1690666200000 // 5:30pm
 }];
 
-function getLineup() {
+function getLineup(options = {}) {
+  const { sortByStartOrder } = options;
+
+  if (sortByStartOrder) {
+    return [...LINEUP].sort((a, b) => a.startTime < b.startTime ? -1 : 1);
+  }
+
   return LINEUP;
 }
 

@@ -16,7 +16,7 @@ function formatStartTime(timestamp) {
 export default class LineupPage extends HTMLElement {
   constructor() {
     super();
-    this.lineup = getLineup().reverse();
+    this.lineup = getLineup({ sortByStartOrder: true });
   }
 
   connectedCallback() {

@@ -9,7 +9,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/1CBlzYSiHvEO86x2UO85u4',
   youtube: 'https://www.youtube.com/channel/UCjNsiyNaoh7-Xp6rtCgq4BA',
   apple: 'https://music.apple.com/us/artist/jabbawaukee/1593104536',
-  startTime: 1690682400000
+  startTime: 1690682400000 // 10pm
 }, {
   name: 'Analog',
   bio: 'Analog is a power duo consisting of guitar and drums.  Strong rock beats, smooth vocals, and loud guitar meld together to create Analog\'s unique sound.',
@@ -20,7 +20,7 @@ const LINEUP = [{
   spotify: '',
   youtube: 'https://www.youtube.com/channel/UCxs5mxoDpmmR0hRbwsxU7Sg',
   apple: '',
-  startTime: 1690679700000
+  startTime: 1690678800000 // 9pm
 }, {
   name: 'Bill Bartholomew',
   bio: 'Singer-songwriter + podcaster.',
@@ -31,7 +31,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/2lTJtrORdzzAfWQulZrkdD',
   youtube: 'https://www.youtube.com/channel/UCEWfrWiFc_6FdOjkdr21wBw',
   apple: 'https://music.apple.com/us/artist/bill-bartholomew/279548573',
-  startTime: 1690677000000
+  startTime: 1690675200000 // 8pm
 }, {
   name: 'The Z-Boys',
   bio: 'The Z-Boys is a power trio playing surf rock, soul and funk for your listening and dancing pleasure.',
@@ -42,7 +42,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/69UMUUtRn8kOqOkF6EqEFl',
   youtube: 'https://www.youtube.com/zboystonight',
   apple: 'https://music.apple.com/us/artist/the-z-boys/1192510207',
-  startTime: 1690674300000
+  startTime: 1690671600000 // 7pm
 }, {
   name: 'Allysen Callery',
   bio: 'Allysen Callery is a self taught singer songwriter from Bristol, Rhode Island, whose delicate, mesmerizing sound has been compared to classic British folk artists like Sandy Denny and Nick Drake.',
@@ -53,7 +53,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/2p3yVqXhK2pSO47sxuNXmj',
   youtube: 'https://www.youtube.com/channel/UC_jVd3HqohIpCfWeffwU0Qw',
   apple: 'https://music.apple.com/us/artist/allysen-callery/274514462',
-  startTime: 1690671600000
+  startTime: 1690668900000 // 6:15pm
 }, {
   name: 'Nate Farrar',
   bio: '',
@@ -64,12 +64,7 @@ const LINEUP = [{
   spotify: 'https://open.spotify.com/artist/627JjqozdCkghNVTuxDQc2',
   youtube: '',
   apple: 'https://music.apple.com/us/artist/nate-farrar/211003726',
-  startTime: 1690668900000
-}, {
-  name: 'To Be Announced',
-  bio: '',
-  picture: 'https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg',
-  startTime: 1690666200000
+  startTime: 1690666200000 // 5:30pm
 }];
 
 function getLineup() {

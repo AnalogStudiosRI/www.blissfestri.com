@@ -23,7 +23,7 @@ const LINEUP = [{
   startTime: 1690678800000 // 9pm
 }, {
   name: 'Bill Bartholomew',
-  bio: 'Singer-songwriter + podcaster.',
+  bio: 'Bill Bartholomew is an indie artist and podcaster. His music has been featured on VICE, Showtime, MTV and many other platforms.',
   picture: '/assets/images/lineup/bill-bartholomew.webp',
   facebook: 'https://www.facebook.com/billbartholomewmusic/',
   instagram: 'https://www.instagram.com/billbartholomew/',

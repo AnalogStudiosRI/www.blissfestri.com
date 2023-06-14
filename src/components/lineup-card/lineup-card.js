@@ -14,7 +14,6 @@ function getSocialLinksList(name, socials) {
             <img
               src="/assets/images/${label}-icon.png"
               alt="${formattedTitle}"
-              class="w-5/6 md:w-full"
               width="40"
               height="40"
               loading="lazy"
@@ -80,7 +79,7 @@ class LineupCard extends HTMLElement {
 
         <div class="w-1/2 ml-16 lg:w-2/5">
           <h2 class="text-2xl md:text-4xl bold font-primary text-primary uppercase">${name}</h2>
-          <p class="font-primary md:text-2xl">${bio}</p>
+          <p class="font-primary">${bio}</p>
           ${getSocialLinksList(name, socials)}
         </div>
       </article>

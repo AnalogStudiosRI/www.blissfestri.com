@@ -31,7 +31,7 @@ export default class LineupPage extends HTMLElement {
           </span>
 
           <bf-lineup-card
-            class="inline-block mb-24 lg:w-3/4"
+            class="inline-block mb-12 lg:w-3/4"
             rotation="${rotation}"
             name="${name}"
             bio="${bio}"

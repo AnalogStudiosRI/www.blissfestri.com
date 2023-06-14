@@ -71,6 +71,8 @@ class LineupCard extends HTMLElement {
                 class="bg-slate-50 ml-4 pb-8 pl-2 pr-2 pt-2 drop-shadow-lg lg:pb-12 lg:pl-4 lg:pr-4 lg:pt-4"
                 src="${picture}"
                 alt="Picture of ${name}"
+                width="300"
+                height="300"
               />
             </picture>
           </div>

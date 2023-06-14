@@ -56,7 +56,7 @@ const LINEUP = [{
   startTime: 1690668900000 // 6:15pm
 }, {
   name: 'Nate Farrar',
-  bio: '',
+  bio: 'With a debut album giving a nod to Mississippi Delta Blues, Nate Farrar\'s music ranges in mood from forlorn to foot-stomping.',
   picture: '/assets/images/lineup/nate-farrar.webp',
   facebook: '',
   instagram: 'https://www.instagram.com/splinter_hippie',

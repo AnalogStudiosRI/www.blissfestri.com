@@ -8,28 +8,21 @@ export default class LineupPoster extends HTMLElement {
           class="bg-white opacity-70 pt-4 rounded-lg overflow-hidden"
         >
           <h2
-            class="text-center text-5xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
+            class="text-center text-6xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
           >
             Lineup
           </h2>
 
-          <ul class="font-extrabold text-center text-4xl uppercase md:w-3/4 md:ml-auto md:mr-auto">
+          <ul class="font-extrabold text-center text-5xl uppercase md:ml-auto md:mr-auto">
             <li class="md:inline">Jabbawaukee</li>
-            <li class="md:inline">
-              <img
-                src="/assets/images/star.webp"
-                alt="Artist name separator"
-                width="85"
-                height=85"
-                class="hidden m-2 md:inline w-1/12 scale-50"
-              />
-              Analog
-            </li>
           </ul>
 
           <ul
-            class="font-bold text-center text-3xl md:text-2xl uppercase md:w-2/3 xl:w-3/4 md:ml-auto md:mr-auto"
+            class="font-semibold text-center text-3xl uppercase w-11/12 ml-auto mr-auto"
           >
+            <li class="md:inline">
+              Analog
+            </li>
             <li class="md:inline">
               <img
                 src="/assets/images/star.webp"
@@ -39,8 +32,6 @@ export default class LineupPoster extends HTMLElement {
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
               Bill Bartholomew
-            </li>
-            <li class="md:inline">
               <img
                 src="/assets/images/star.webp"
                 alt="Artist name separator"
@@ -48,7 +39,17 @@ export default class LineupPoster extends HTMLElement {
                 height=85"
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
+            </li>
+            <li class="md:inline">
               The Z-Boys
+            </li>
+          </ul>
+
+          <ul
+            class="text-center font-medium text-3xl uppercase w-10/12 ml-auto mr-auto"
+          >
+            <li class="md:inline">
+              jesse the Tree
             </li>
             <li class="md:inline">
               <img
@@ -67,7 +68,7 @@ export default class LineupPoster extends HTMLElement {
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
             </li>
-            <li class="md:block lg:inline">
+            <li class="md:inline">
               Nate Farrar
             </li>
           </ul>

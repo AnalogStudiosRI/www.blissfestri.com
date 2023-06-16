@@ -13,12 +13,12 @@ export default class LineupPoster extends HTMLElement {
             Lineup
           </h2>
 
-          <ul class="font-extrabold text-center text-5xl uppercase md:ml-auto md:mr-auto">
+          <ul class="font-extrabold text-center text-5xl uppercase">
             <li class="md:inline">Jabbawaukee</li>
           </ul>
 
           <ul
-            class="font-semibold text-center text-3xl uppercase w-11/12 ml-auto mr-auto"
+            class="font-semibold text-center text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               Analog
@@ -32,6 +32,8 @@ export default class LineupPoster extends HTMLElement {
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
               Bill Bartholomew
+            </li>
+            <li class="md:inline">
               <img
                 src="/assets/images/star.webp"
                 alt="Artist name separator"
@@ -39,14 +41,12 @@ export default class LineupPoster extends HTMLElement {
                 height=85"
                 class="hidden m-2 md:inline w-1/12 scale-50"
               />
-            </li>
-            <li class="md:inline">
               The Z-Boys
             </li>
           </ul>
 
           <ul
-            class="text-center font-medium text-3xl uppercase w-10/12 ml-auto mr-auto"
+            class="text-center font-medium text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               jesse the Tree

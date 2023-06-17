@@ -8,17 +8,17 @@ export default class LineupPoster extends HTMLElement {
           class="bg-white opacity-70 pt-4 rounded-lg overflow-hidden"
         >
           <h2
-            class="text-center text-6xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
+            class="text-center underline text-6xl tracking-widest uppercase font-extrabold mb-8 scale-x-125 scale-y-150"
           >
             Lineup
           </h2>
 
-          <ul class="font-extrabold text-center text-5xl uppercase">
+          <ul class="font-extrabold font-secondary text-center text-5xl uppercase">
             <li class="md:inline">Jabbawaukee</li>
           </ul>
 
           <ul
-            class="font-semibold text-center text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
+            class="font-semibold font-secondary text-center text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               Analog
@@ -46,7 +46,7 @@ export default class LineupPoster extends HTMLElement {
           </ul>
 
           <ul
-            class="text-center font-medium text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
+            class="text-center font-secondary font-medium text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
             <li class="md:inline">
               jesse the Tree

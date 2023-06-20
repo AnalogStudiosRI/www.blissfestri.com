@@ -1,12 +1,13 @@
 import { expect } from '@esm-bundle/chai';
+import { getLineup } from '../../services/lineup-service.js';
 import './lineup-card.js';
-import { MOCK_ARTIST } from './mock-artist.js';
 
 function getFormattedTitle(name, social) {
   return `${name}'s ${social.charAt(0).toUpperCase()}${social.slice(1)} page`;
 }
 
 describe('Components/Lineup Card', () => {
+  const MOCK_ARTIST = getLineup()[0];
   let card;
 
   describe('Default Behavior', () => {

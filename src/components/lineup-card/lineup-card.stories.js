@@ -1,6 +1,8 @@
 import '../../styles/theme.css';
 import './lineup-card.js';
-import { MOCK_ARTIST } from './mock-artist.js';
+import { getLineup } from '../../services/lineup-service.js';
+
+const MOCK_ARTIST = getLineup()[0];
 
 export default {
   title: 'Components/Lineup Card'

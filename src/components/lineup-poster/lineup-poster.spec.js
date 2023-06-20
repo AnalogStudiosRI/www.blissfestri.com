@@ -27,7 +27,7 @@ describe('Components/Lineup Poster', () => {
     it('should have the expected number of lineup lists', () => {
       const lists = document.querySelectorAll('ul');
 
-      expect(lists.length).to.equal(2);
+      expect(lists.length).to.equal(3);
     });
 
     it('should have the expected content in each list of items', () => {
@@ -40,8 +40,6 @@ describe('Components/Lineup Poster', () => {
           expect(item.textContent).to.not.be.undefined;
         });
       });
-
-      expect(lists.length).to.equal(2);
     });
   });
 

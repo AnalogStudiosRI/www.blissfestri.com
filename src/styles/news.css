@@ -27,7 +27,11 @@
 }
 
 table {
-  @apply text-center mr-auto ml-auto text-4xl text-primary font-primary mt-8;
+  @apply text-center mr-auto ml-auto text-3xl text-primary font-primary mt-8;
+}
+
+table tbody {
+  @apply italic;
 }
 
 table tr th {

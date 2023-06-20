@@ -2,7 +2,7 @@ export default class LineupPoster extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div
-        class="lineup rounded-lg p-2 md:p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs-campus-ariel.webp')]"
+        class="lineup rounded-lg p-2 md:p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs/iyrs-facade.webp')]"
       >
         <div
           class="bg-white opacity-70 pt-4 rounded-lg overflow-hidden"

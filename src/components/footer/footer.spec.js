@@ -25,7 +25,7 @@ describe('Components/Footer', () => {
 
     describe('Social Icon Links', () => {
       it('should have the expected Facebook social link icon', () => {
-        const facebookLink = document.querySelectorAll('a[aria-label="Analog Studios Facebook page"]');
+        const facebookLink = document.querySelectorAll('a[aria-label="Blissfest Facebook page"]');
         const facebookImage = facebookLink[0].querySelectorAll('img');
 
         expect(facebookLink.length).to.equal(1);

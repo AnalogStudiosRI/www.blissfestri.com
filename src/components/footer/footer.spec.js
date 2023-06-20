@@ -41,7 +41,7 @@ describe('Components/Footer', () => {
       });
 
       it('should have the expected Instagram social link icon', () => {
-        const instagramLink = document.querySelectorAll('a[aria-label="Dave Flamand Instagram page"]');
+        const instagramLink = document.querySelectorAll('a[aria-label="Blissfest Instagram page"]');
         const instagramImage = instagramLink[0].querySelectorAll('img');
 
         expect(instagramLink.length).to.equal(1);

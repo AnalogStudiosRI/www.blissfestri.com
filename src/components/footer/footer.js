@@ -35,14 +35,14 @@ export default class Footer extends HTMLElement {
               />
             </a>
             <a
-              href="https://www.instagram.com/dave.flamand/"
-              aria-label="Dave Flamand Instagram page"
+              href="https://www.instagram.com/blissfestri/"
+              aria-label="Blissfest Instagram page"
               target="_blank"
               class="ml-2 mr-2"
             >
               <img
                 src="/assets/images/instagram-icon.png"
-                alt="Dave Flamand Instagram page"
+                alt="Blissfest Instagram page"
                 width="40"
                 height="40"
                 loading="lazy"

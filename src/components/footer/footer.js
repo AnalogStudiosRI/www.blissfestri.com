@@ -8,13 +8,13 @@ export default class Footer extends HTMLElement {
           <div class="flex gap-x-4 justify-center mb-4">
             <a
               href="https://www.facebook.com/blissfestri/"
-              aria-label="Analog Studios Facebook page"
+              aria-label="Blissfest Facebook page"
               target="_blank"
               class="ml-2 mr-2"
             >
               <img
                 src="/assets/images/facebook-icon.png"
-                alt="Analog Studios Facebook page"
+                alt="Blissfest Facebook page"
                 width="40"
                 height="40"
                 loading="lazy"

@@ -25,3 +25,15 @@
 #news a {
   @apply underline;
 }
+
+table {
+  @apply text-center mr-auto ml-auto text-2xl text-primary font-primary mt-8 md:text-3xl;
+}
+
+table tbody {
+  @apply italic;
+}
+
+table tr th {
+  @apply underline;
+}

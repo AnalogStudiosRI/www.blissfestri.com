@@ -12,7 +12,7 @@ class Slideshow extends HTMLElement {
       '/assets/images/iyrs/iyrs-harbor-view-wide.png',
       '/assets/images/iyrs/iyrs-harbor-view-close-up.png',
       '/assets/images/iyrs/iyrs-entrance-top-view.png',
-      '/assets/images/iyrs/iyrs-plaque.png',
+      '/assets/images/iyrs/iyrs-plaque.png'
     ];
     this.innerHTML = `
       <picture>

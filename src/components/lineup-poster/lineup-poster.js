@@ -1,5 +1,37 @@
+import { getLineup } from '../../services/lineup-service.js';
+
+function formatSubListItem(item, idx) {
+  const { name } = item;
+
+  return idx === 0
+    ? `<li class="md:inline">${name}</li>`
+    : `
+      <li class="md:inline">
+        <img
+          src="/assets/images/star.webp"
+          alt="Artist name separator"
+          width="85"
+          height=85"
+          class="hidden m-2 md:inline w-1/12 scale-50"
+        />
+        ${name}
+      </li>
+    `;
+}
+
 export default class LineupPoster extends HTMLElement {
+  constructor() {
+    super();
+    this.lineup = getLineup({ sortByStartOrder: true }).reverse();
+  }
+
   connectedCallback() {
+    const headliner = this.lineup.find(item => item.isHeadliner);
+    const coHeadliners = this.lineup.filter(item => item.isCoHeadliner);
+    const openers = this.lineup.filter(item => item.isOpener);
+    const coHeadlinersList = coHeadliners.map(formatSubListItem).join('');
+    const openersList = openers.map(formatSubListItem).join('');
+
     this.innerHTML = `
       <div
         class="lineup rounded-lg p-2 md:p-6 font-primary w-full bg-cover bg-no-repeat bg-[url('/assets/images/iyrs/iyrs-facade.webp')]"
@@ -14,63 +46,19 @@ export default class LineupPoster extends HTMLElement {
           </h2>
 
           <ul class="font-extrabold font-secondary text-center text-5xl uppercase">
-            <li class="md:inline">Jabbawaukee</li>
+            <li>${headliner.name}</li>
           </ul>
 
           <ul
             class="font-semibold font-secondary text-center text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
-            <li class="md:inline">
-              Analog
-            </li>
-            <li class="md:inline">
-              <img
-                src="/assets/images/star.webp"
-                alt="Artist name separator"
-                width="85"
-                height=85"
-                class="hidden m-2 md:inline w-1/12 scale-50"
-              />
-              Bill Bartholomew
-            </li>
-            <li class="md:inline">
-              <img
-                src="/assets/images/star.webp"
-                alt="Artist name separator"
-                width="85"
-                height=85"
-                class="hidden m-2 md:inline w-1/12 scale-50"
-              />
-              The Z-Boys
-            </li>
+            ${coHeadlinersList}
           </ul>
 
           <ul
             class="text-center font-secondary font-medium text-3xl uppercase md:w-10/12 md:ml-auto md:mr-auto"
           >
-            <li class="md:inline">
-              jesse the Tree
-            </li>
-            <li class="md:inline">
-              <img
-                src="/assets/images/star.webp"
-                alt="Artist name separator"
-                width="85"
-                height=85"
-                class="hidden m-2 md:inline w-1/12 scale-50"
-              />
-              Allysen Callery
-              <img
-                src="/assets/images/star.webp"
-                alt="Artist name separator"
-                width="85"
-                height=85"
-                class="hidden m-2 md:inline w-1/12 scale-50"
-              />
-            </li>
-            <li class="md:inline">
-              Nate Farrar
-            </li>
+            ${openersList}
           </ul>
 
           <p class="mt-8 italic text-center">

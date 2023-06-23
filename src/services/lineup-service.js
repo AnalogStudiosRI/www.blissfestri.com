@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 const LINEUP = [{
+  isHeadliner: true,
   name: 'Jabbawaukee',
   bio: 'Jabbawaukee is a Southern New England based quartet playing psychedelic funk and jam rock!',
   picture: '/assets/images/lineup/jabbawaukee.webp',
@@ -11,6 +12,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/jabbawaukee/1593104536',
   startTime: 1690683300000 // 10:15pm
 }, {
+  isCoHeadliner: true,
   name: 'Analog',
   bio: 'Analog is a Newport, RI based power trio consisting of guitar, bass and drums.  Strong rock beats, smooth vocals, and loud guitar meld together to create Analog\'s unique sound.',
   picture: '/assets/images/lineup/analog.webp',
@@ -22,6 +24,7 @@ const LINEUP = [{
   apple: '',
   startTime: 1690680300000 // 9:25pm
 }, {
+  isCoHeadliner: true,
   name: 'Bill Bartholomew',
   bio: 'Bill Bartholomew is an indie artist and podcaster. His music has been featured on VICE, Showtime, MTV and many other platforms.',
   picture: '/assets/images/lineup/bill-bartholomew.webp',
@@ -33,6 +36,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/bill-bartholomew/279548573',
   startTime: 1690677300000 // 8:35pm
 }, {
+  isCoHeadliner: true,
   name: 'The Z-Boys',
   bio: 'The Z-Boys is a power trio playing surf rock, soul and funk for your listening and dancing pleasure.',
   picture: '/assets/images/lineup/the-z-boys.webp',
@@ -44,6 +48,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/the-z-boys/1192510207',
   startTime: 1690674300000 // 7:45pm
 }, {
+  isOpener: true,
   name: 'jesse the Tree',
   bio: ' Rhode Island emcee and beatsmith jesse the Tree brings influences ranging from a more traditionally organic and melodic corner of the music world to sounds closer to his own output of hip hop and contemporary underground.   ',
   picture: '/assets/images/lineup/jesse-the-tree.webp',
@@ -55,6 +60,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/jesse-the-tree/1310806252',
   startTime: 1690671600000 // 7pm
 }, {
+  isOpener: true,
   name: 'Allysen Callery',
   bio: 'Allysen Callery is a self taught singer songwriter from Bristol, Rhode Island, whose delicate, mesmerizing sound has been compared to classic British folk artists like Sandy Denny and Nick Drake.',
   picture: '/assets/images/lineup/allysen-callery.webp',
@@ -66,6 +72,7 @@ const LINEUP = [{
   apple: 'https://music.apple.com/us/artist/allysen-callery/274514462',
   startTime: 1690668900000 // 6:15pm
 }, {
+  isOpener: true,
   name: 'Nate Farrar',
   bio: 'With a debut album giving a nod to Mississippi Delta Blues, Nate Farrar\'s music ranges in mood from forlorn to foot-stomping.',
   picture: '/assets/images/lineup/nate-farrar.webp',

@@ -5,16 +5,21 @@ class Slideshow extends HTMLElement {
     this.currentIndex = 0;
     this.animateState = 'on';
     this.images = [
-      '/assets/images/iyrs-campus-ariel.webp',
-      '/assets/images/iyrs-logo.webp',
-      '/assets/images/analog-studios-logo.webp'
+      '/assets/images/iyrs/iyrs-facade.webp',
+      '/assets/images/iyrs/iyrs-front-doors-open.png',
+      '/assets/images/iyrs/iyrs-mezzanine-view.png',
+      '/assets/images/iyrs/iyrs-vip-room.png',
+      '/assets/images/iyrs/iyrs-harbor-view-wide.png',
+      '/assets/images/iyrs/iyrs-harbor-view-close-up.png',
+      '/assets/images/iyrs/iyrs-entrance-top-view.png',
+      '/assets/images/iyrs/iyrs-plaque.png',
     ];
     this.innerHTML = `
       <picture>
         <img
-          class="h-96 min-w-fit mr-auto ml-auto"
-          width="500"
-          height="500"
+          class="block w-full"
+          width="400"
+          height="400"
           src="${this.images[this.currentIndex]}"
           alt="Slideshow image number ${this.currentIndex + 1}"
         />

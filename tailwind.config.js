@@ -14,7 +14,21 @@ export default {
       fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],
         'secondary': ['Citrus Gothic', 'sans-serif']
-      }
+      },
+      animation: {
+        fade: 'fadeOut 1s ease-in-out',
+        other: 'fadeIn 1.5s linear'
+      },
+      keyframes: () => ({
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 }
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
+        }
+      })
     }
   },
   plugins: []

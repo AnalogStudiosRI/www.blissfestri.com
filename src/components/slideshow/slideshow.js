@@ -3,7 +3,6 @@ class Slideshow extends HTMLElement {
     super();
 
     this.currentIndex = 0;
-    this.animateState = 'on';
     this.images = [
       '/assets/images/iyrs/iyrs-facade.webp',
       '/assets/images/iyrs/iyrs-front-doors-open.png',
@@ -41,14 +40,19 @@ class Slideshow extends HTMLElement {
 
   connectedCallback() {
     if (globalThis.window) {
+      // TODO use request animation frame
+      // TODO polaroid treatment / border / something?
       setInterval(() => {
-        this.animateState = 'off';
-        // this.update();
+        this.querySelector('img').classList.remove('animate-other');
+        this.querySelector('img').classList.add('animate-fade');
 
         setTimeout(() => {
           this.cycleImage();
-          this.animateState = 'on';
-          // this.update();
+
+          setTimeout(() => {
+            this.querySelector('img').classList.remove('animate-fade');
+            this.querySelector('img').classList.add('animate-other');
+          }, 250);
         }, 500);
       }, 5000);
     }

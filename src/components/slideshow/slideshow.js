@@ -56,45 +56,46 @@ class Slideshow extends HTMLElement {
   }
 
   cyclesImages() {
+    const img = this.querySelector('img');
     const that = this;
     const TRANSITION_STATES = {
       SHOW: 'show',
       FADE_IN: 'fade-in',
       FADE_OUT: 'fade-out',
-      SWAP: 'swap',
-    }
+      SWAP: 'swap'
+    };
 
     let startTime;
     let state = TRANSITION_STATES.SHOW;
 
     // state(s) - showing (5s), fadeOut (1s), swap, fadeIn (1)
-    // 1) > 5000s - set state and class to fade out
-    // 2) > 6250s - swap image
-    // 3) > 6500s - fade in
-    // 3) > 7750s - reset loop
-    function cycleTransition(timeStamp) {
+    // 1) > 4000s - set state and class to fade out
+    // 2) > 5250s - swap image
+    // 3) > 5750s - fade in
+    // 3) > 7500s - reset loop
+    function cycleTransition(timestamp) {
       if (startTime === undefined) {
-        startTime = timeStamp;
+        startTime = timestamp;
       }
-      const elapsed = timeStamp - startTime;
+      const elapsed = timestamp - startTime;
 
-      if (state === TRANSITION_STATES.SHOW && elapsed > 5000) {
+      if (state === TRANSITION_STATES.SHOW && elapsed > 4000) {
         state = TRANSITION_STATES.FADE_OUT;
         console.log('fade out!');
-        that.querySelector('img').classList.remove('animate-other');
-        that.querySelector('img').classList.add('animate-fade');
-      } else if(state === TRANSITION_STATES.FADE_OUT && elapsed > 6250) {
+        img.classList.remove('animate-other');
+        img.classList.add('animate-fade');
+      } else if (state === TRANSITION_STATES.FADE_OUT && elapsed > 5250) {
         console.log('set next!');
         state = TRANSITION_STATES.SWAP;
-        
+
         that.setNextImage();
-      } else if(state === TRANSITION_STATES.SWAP && elapsed > 6500) {
+      } else if (state === TRANSITION_STATES.SWAP && elapsed > 5750) {
         console.log('fade in!');
         state = TRANSITION_STATES.FADE_IN;
 
-        that.querySelector('img').classList.add('animate-other');
-        that.querySelector('img').classList.remove('animate-fade');
-      } else if(state === TRANSITION_STATES.FADE_IN && elapsed > 7750) {
+        img.classList.add('animate-other');
+        // that.querySelector('img').classList.remove('animate-fade');
+      } else if (state === TRANSITION_STATES.FADE_IN && elapsed > 7500) {
         console.log('reset!!!!');
         startTime = undefined;
         state = TRANSITION_STATES.SHOW;
@@ -102,7 +103,7 @@ class Slideshow extends HTMLElement {
 
       window.requestAnimationFrame(cycleTransition);
     }
-    
+
     window.requestAnimationFrame(cycleTransition);
   }
 

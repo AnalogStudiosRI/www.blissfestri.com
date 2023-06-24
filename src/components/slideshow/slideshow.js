@@ -16,7 +16,7 @@ class Slideshow extends HTMLElement {
     this.innerHTML = `
       <picture>
         <img
-          class="block w-full"
+          class="block w-full rounded-2xl"
           width="400"
           height="400"
           src="${this.images[this.currentIndex]}"

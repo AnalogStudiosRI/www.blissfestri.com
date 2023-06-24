@@ -43,7 +43,7 @@ class Slideshow extends HTMLElement {
     }, 2000);
   }
 
-  cycleImage() {
+  setNextImage() {
     const img = this.querySelector('img');
     this.currentIndex = this.currentIndex += 1;
 
@@ -55,25 +55,61 @@ class Slideshow extends HTMLElement {
     img.setAttribute('alt', `Slideshow image number ${this.currentIndex + 1}`);
   }
 
+  cyclesImages() {
+    const that = this;
+    const TRANSITION_STATES = {
+      SHOW: 'show',
+      FADE_IN: 'fade-in',
+      FADE_OUT: 'fade-out',
+      SWAP: 'swap',
+    }
+
+    let startTime;
+    let state = TRANSITION_STATES.SHOW;
+
+    // state(s) - showing (5s), fadeOut (1s), swap, fadeIn (1)
+    // 1) > 5000s - set state and class to fade out
+    // 2) > 6250s - swap image
+    // 3) > 6500s - fade in
+    // 3) > 7750s - reset loop
+    function cycleTransition(timeStamp) {
+      if (startTime === undefined) {
+        startTime = timeStamp;
+      }
+      const elapsed = timeStamp - startTime;
+
+      if (state === TRANSITION_STATES.SHOW && elapsed > 5000) {
+        state = TRANSITION_STATES.FADE_OUT;
+        console.log('fade out!');
+        that.querySelector('img').classList.remove('animate-other');
+        that.querySelector('img').classList.add('animate-fade');
+      } else if(state === TRANSITION_STATES.FADE_OUT && elapsed > 6250) {
+        console.log('set next!');
+        state = TRANSITION_STATES.SWAP;
+        
+        that.setNextImage();
+      } else if(state === TRANSITION_STATES.SWAP && elapsed > 6500) {
+        console.log('fade in!');
+        state = TRANSITION_STATES.FADE_IN;
+
+        that.querySelector('img').classList.add('animate-other');
+        that.querySelector('img').classList.remove('animate-fade');
+      } else if(state === TRANSITION_STATES.FADE_IN && elapsed > 7750) {
+        console.log('reset!!!!');
+        startTime = undefined;
+        state = TRANSITION_STATES.SHOW;
+      }
+
+      window.requestAnimationFrame(cycleTransition);
+    }
+    
+    window.requestAnimationFrame(cycleTransition);
+  }
+
   connectedCallback() {
     if (globalThis.window) {
-      // TODO use request animation frame
-      // TODO polaroid treatment / border / something?
       this.preloadImages();
-
-      setInterval(() => {
-        this.querySelector('img').classList.remove('animate-other');
-        this.querySelector('img').classList.add('animate-fade');
-
-        setTimeout(() => {
-          this.cycleImage();
-
-          setTimeout(() => {
-            this.querySelector('img').classList.remove('animate-fade');
-            this.querySelector('img').classList.add('animate-other');
-          }, 500);
-        }, 500);
-      }, 5000);
+      this.cyclesImages();
     }
   }
 }

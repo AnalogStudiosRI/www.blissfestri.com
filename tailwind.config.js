@@ -16,7 +16,7 @@ export default {
         'secondary': ['Citrus Gothic', 'sans-serif']
       },
       animation: {
-        fade: 'fadeOut 1s ease-in-out',
+        fade: 'fadeOut 1s ease-in-out forwards',
         other: 'fadeIn 1.5s linear'
       },
       keyframes: () => ({

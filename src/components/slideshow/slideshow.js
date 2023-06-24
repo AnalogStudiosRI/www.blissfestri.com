@@ -26,6 +26,23 @@ class Slideshow extends HTMLElement {
     `;
   }
 
+  preloadImages() {
+    let interval;
+    let idx = 1; // offset by 1
+
+    interval = setInterval(() => {
+      const img = new Image();
+
+      img.src = this.images[idx];
+
+      if (idx === this.images.length - 1) {
+        clearInterval(interval);
+      } else {
+        idx = idx += 1;
+      }
+    }, 2000);
+  }
+
   cycleImage() {
     const img = this.querySelector('img');
     this.currentIndex = this.currentIndex += 1;
@@ -42,6 +59,8 @@ class Slideshow extends HTMLElement {
     if (globalThis.window) {
       // TODO use request animation frame
       // TODO polaroid treatment / border / something?
+      this.preloadImages();
+
       setInterval(() => {
         this.querySelector('img').classList.remove('animate-other');
         this.querySelector('img').classList.add('animate-fade');
@@ -52,7 +71,7 @@ class Slideshow extends HTMLElement {
           setTimeout(() => {
             this.querySelector('img').classList.remove('animate-fade');
             this.querySelector('img').classList.add('animate-other');
-          }, 250);
+          }, 500);
         }, 500);
       }, 5000);
     }

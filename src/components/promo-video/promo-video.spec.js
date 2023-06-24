@@ -31,6 +31,10 @@ describe('Components/Promo Video', () => {
     it('should have the loading attribute for the iframe', () => {
       expect(frame.getAttribute('loading')).to.equal('lazy');
     });
+
+    it('should have the title attribute for the iframe', () => {
+      expect(frame.getAttribute('title')).to.equal('Blissfest Promotional Video');
+    });
   });
 
   after(() => {

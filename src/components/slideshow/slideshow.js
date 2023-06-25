@@ -56,6 +56,7 @@ class Slideshow extends HTMLElement {
   }
 
   cyclesImages() {
+    // TODO better name animate-* class names
     const img = this.querySelector('img');
     const that = this;
     const TRANSITION_STATES = {
@@ -80,9 +81,9 @@ class Slideshow extends HTMLElement {
       const elapsed = timestamp - startTime;
 
       if (state === TRANSITION_STATES.SHOW && elapsed > 4000) {
-        state = TRANSITION_STATES.FADE_OUT;
         console.log('fade out!');
-        img.classList.remove('animate-other');
+        state = TRANSITION_STATES.FADE_OUT;
+
         img.classList.add('animate-fade');
       } else if (state === TRANSITION_STATES.FADE_OUT && elapsed > 5250) {
         console.log('set next!');
@@ -93,10 +94,10 @@ class Slideshow extends HTMLElement {
         console.log('fade in!');
         state = TRANSITION_STATES.FADE_IN;
 
-        img.classList.add('animate-other');
-        // that.querySelector('img').classList.remove('animate-fade');
+        img.classList.replace('animate-fade', 'animate-other');
       } else if (state === TRANSITION_STATES.FADE_IN && elapsed > 7500) {
         console.log('reset!!!!');
+        img.classList.remove('animate-other');
         startTime = undefined;
         state = TRANSITION_STATES.SHOW;
       }

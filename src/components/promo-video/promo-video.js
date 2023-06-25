@@ -5,6 +5,7 @@ export default class PromoVideo extends HTMLElement {
         class="w-full aspect-video"
         src="https://www.youtube.com/embed/-zazqdr-g6A"
         title="Blissfest Promotional Video"
+        allowfullscreen
         loading="lazy"
       ></iframe>
     `;

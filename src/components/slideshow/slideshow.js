@@ -1,4 +1,4 @@
-class Slideshow extends HTMLElement {
+export default class Slideshow extends HTMLElement {
   constructor() {
     super();
 
@@ -13,17 +13,6 @@ class Slideshow extends HTMLElement {
       '/assets/images/iyrs/iyrs-entrance-top-view.png',
       '/assets/images/iyrs/iyrs-plaque.png'
     ];
-    this.innerHTML = `
-      <picture>
-        <img
-          class="block w-full rounded-2xl"
-          width="400"
-          height="400"
-          src="${this.images[this.currentIndex]}"
-          alt="Slideshow image number ${this.currentIndex + 1}"
-        />
-      </picture>
-    `;
   }
 
   preloadImages() {
@@ -109,6 +98,18 @@ class Slideshow extends HTMLElement {
   }
 
   connectedCallback() {
+    this.innerHTML = `
+      <picture>
+        <img
+          class="block w-full rounded-2xl"
+          width="400"
+          height="400"
+          src="${this.images[this.currentIndex]}"
+          alt="Slideshow image number ${this.currentIndex + 1}"
+        />
+      </picture>
+    `;
+
     if (globalThis.window) {
       this.preloadImages();
       this.cyclesImages();

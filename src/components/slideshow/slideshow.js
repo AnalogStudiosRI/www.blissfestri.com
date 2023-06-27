@@ -4,14 +4,14 @@ export default class Slideshow extends HTMLElement {
 
     this.currentIndex = 0;
     this.images = [
-      '/assets/images/iyrs/iyrs-facade-sm.webp',
-      '/assets/images/iyrs/iyrs-front-doors-open.webp',
-      '/assets/images/iyrs/iyrs-mezzanine-view.webp',
-      '/assets/images/iyrs/iyrs-vip-room.webp',
-      '/assets/images/iyrs/iyrs-harbor-view-wide.webp',
-      '/assets/images/iyrs/iyrs-harbor-view-close-up.webp',
-      '/assets/images/iyrs/iyrs-entrance-top-view.webp',
-      '/assets/images/iyrs/iyrs-plaque.webp'
+      '/assets/images/iyrs/iyrs-facade-lg.webp',
+      '/assets/images/iyrs/iyrs-front-doors-open-lg.webp',
+      '/assets/images/iyrs/iyrs-mezzanine-view-lg.webp',
+      '/assets/images/iyrs/iyrs-vip-room-lg.webp',
+      '/assets/images/iyrs/iyrs-harbor-view-wide-lg.webp',
+      '/assets/images/iyrs/iyrs-harbor-view-close-up-lg.webp',
+      '/assets/images/iyrs/iyrs-entrance-top-view-lg.webp',
+      '/assets/images/iyrs/iyrs-plaque-lg.webp'
     ];
   }
 

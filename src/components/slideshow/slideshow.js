@@ -70,22 +70,18 @@ export default class Slideshow extends HTMLElement {
       const elapsed = timestamp - startTime;
 
       if (state === TRANSITION_STATES.SHOW && elapsed > 4000) {
-        console.log('fade out!');
         state = TRANSITION_STATES.FADE_OUT;
 
         img.classList.add('animate-fade');
       } else if (state === TRANSITION_STATES.FADE_OUT && elapsed > 5250) {
-        console.log('set next!');
         state = TRANSITION_STATES.SWAP;
 
         that.setNextImage();
       } else if (state === TRANSITION_STATES.SWAP && elapsed > 5750) {
-        console.log('fade in!');
         state = TRANSITION_STATES.FADE_IN;
 
         img.classList.replace('animate-fade', 'animate-other');
       } else if (state === TRANSITION_STATES.FADE_IN && elapsed > 7500) {
-        console.log('reset!!!!');
         img.classList.remove('animate-other');
         startTime = undefined;
         state = TRANSITION_STATES.SHOW;

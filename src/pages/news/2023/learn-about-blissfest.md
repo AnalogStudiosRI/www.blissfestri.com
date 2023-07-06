@@ -4,7 +4,7 @@ template: news
 
 # Welcome to Blissfest!
 
-<span class="publish-date">Published: June 30, 2023</span>
+<span class="publish-date">Published: July 6, 2023</span>
 
 <img
   src="/assets/images/blissfest-icon-sm.webp"
@@ -13,7 +13,7 @@ template: news
   alt="Blissfest icon"
 />
 
-For all those who have wanted to learn more about Blissfest and our exciting new location this year, as IYRS Restoration Hall, we have created an [About page](/about/) for all those who would love to learn more!
+For all those who have wanted to learn more about Blissfest and our exciting new location this year, at IYRS Restoration Hall, we have created an [About page](/about/) for all those who would love to learn more!
 
 On this page we have included a brief history of Blissfest, some cool pictures of the venue, as well as a live video walkthrough and showcase of the venue and the VIP room presented by Dave Flamand!  
 

@@ -2,7 +2,7 @@
 template: news
 ---
 
-# Welcome to Blissfest!
+# Learn About Blissfest
 
 <span class="publish-date">Published: July 6, 2023</span>
 

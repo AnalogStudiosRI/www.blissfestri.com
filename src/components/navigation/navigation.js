@@ -5,9 +5,9 @@ export default class Navigation extends HTMLElement {
       {
         name: 'Home',
         url: '/'
-      // }, {
-      //   name: 'About',
-      //   url: '/about/'
+      }, {
+        name: 'About',
+        url: '/about/'
       }, {
         name: 'Lineup',
         url: '/lineup/'

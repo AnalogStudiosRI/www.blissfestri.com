@@ -27,31 +27,31 @@ describe('Components/Navigation', () => {
     });
 
     it('should have the expected number of links in the nav', () => {
-      expect(links.length).to.equal(6);
+      expect(links.length).to.equal(7);
     });
 
     it('should have the expected links in the correct order', () => {
       const navLinks = Array.from(links).map(link => link.getAttribute('href'));
 
       expect(navLinks[0]).to.equal('/');
-      // expect(navLinks[1]).to.equal('/about/');
-      expect(navLinks[1]).to.equal('/lineup/');
-      expect(navLinks[2]).to.equal('/tickets/');
-      expect(navLinks[3]).to.equal('/faq/');
-      expect(navLinks[4]).to.equal('/news/');
-      expect(navLinks[5]).to.equal('/contact/');
+      expect(navLinks[1]).to.equal('/about/');
+      expect(navLinks[2]).to.equal('/lineup/');
+      expect(navLinks[3]).to.equal('/tickets/');
+      expect(navLinks[4]).to.equal('/faq/');
+      expect(navLinks[5]).to.equal('/news/');
+      expect(navLinks[6]).to.equal('/contact/');
     });
 
     it('should have the expected link labels in the correct order', () => {
       const navText = Array.from(links).map(link => link.innerText.trim());
 
       expect(navText[0]).to.equal('Home');
-      // expect(navText[1]).to.equal('About');
-      expect(navText[1]).to.equal('Lineup');
-      expect(navText[2]).to.equal('Tickets');
-      expect(navText[3]).to.equal('FAQ');
-      expect(navText[4]).to.equal('News');
-      expect(navText[5]).to.equal('Contact');
+      expect(navText[1]).to.equal('About');
+      expect(navText[2]).to.equal('Lineup');
+      expect(navText[3]).to.equal('Tickets');
+      expect(navText[4]).to.equal('FAQ');
+      expect(navText[5]).to.equal('News');
+      expect(navText[6]).to.equal('Contact');
     });
 
     after(async () => {

@@ -24,12 +24,12 @@ export default class SponsorsBanner extends HTMLElement {
     this.innerHTML = `
       <div>
         <h1
-          class="text-center text-5xl text-accent font-secondary"
+          class="text-center text-5xl text-accent font-secondary underline"
         >
           Our Sponsors
         </h1>
 
-        <ul class="lg:flex lg:justify-center">
+        <ul class="m-4 flex justify-center flex-wrap">
           ${sponsorsListHtml}
         </ul>
       </div>

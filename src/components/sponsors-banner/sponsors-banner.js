@@ -3,7 +3,7 @@ export default class SponsorsBanner extends HTMLElement {
     super();
     this.sponsors = [{
       name: 'Lovewell Farms',
-      logo: 'https://cdn-jdbln.nitrocdn.com/VRlhWinlfjLPSAjjEBVMUoITagjhbCBn/assets/images/optimized/rev-3971e17/wp-content/uploads/2020/09/cropped-Lovewell-Logo-2.png',
+      logo: '/assets/images/lovewell-farms-logo.png',
       link: 'https://lovewellfarms.com'
     }];
   }

@@ -6,7 +6,7 @@ template: news
 
 <span class="publish-date">Published: July XX, 2023</span>
 
-Below are the merchandise options we'll be offering for sale exclusively at this year's Blissfest!
+Below are the merchandise options we'll be offering for sale exclusively at this year's Blissfest.  All designs created by [Erika Flamand](https://www.behance.net/eflamand2ddb).
 
 ## Shirts ($25)
 
@@ -17,7 +17,7 @@ Below are the merchandise options we'll be offering for sale exclusively at this
   alt="Blissfest t-shirt mockup"
 />
 
-Designed by Erika Flamand (who also designed our website!) and minted and printed by our friends at [Mint Printworks](https://mintprintworks.com), this year's Blissfest will be offering shirts for sale!  Featuring a granite colored dye, [this shirt](https://www.ssactivewear.com/p/comfort_colors/1717) is a 100% cotton relaxed fit and will come in a wider variety of sizes!
+Minted and printed by our friends at [Mint Printworks](https://mintprintworks.com), this year's Blissfest will be offering shirts for sale.  Featuring a granite colored dye, [this shirt](https://www.ssactivewear.com/p/comfort_colors/1717) is a 100% cotton relaxed fit and will come in a variety of sizes.
 
 ## Posters ($10)
 
@@ -28,4 +28,4 @@ Designed by Erika Flamand (who also designed our website!) and minted and printe
   alt="Blissfest t-shirt mockup"
 />
 
-Also designed by Erika Flamand we have created a limited set of Blissfest posters on matte card stock.  These posters are 11" x 7".
+In addition to shirts, we will also have a limited set of Blissfest posters on 11" x 17" matte card stock.

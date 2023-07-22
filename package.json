@@ -27,7 +27,8 @@
     "lint": "ls-lint && yarn lint:js && yarn lint:css",
     "lint:js": "eslint \"*.{js,cjs,.mjs}\" \".storybook/*.{js,cjs}\" \"src/**/**/*.js\"",
     "lint:css": "stylelint \"./src/**/*.js\", \"./src/**/*.css\"",
-    "clean": "rimraf public/ .greenwood/ ./storybook-static"
+    "clean": "rimraf public/ .greenwood/ ./storybook-static",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4",
@@ -55,5 +56,8 @@
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "patch-package": "^7.0.2"
   }
 }

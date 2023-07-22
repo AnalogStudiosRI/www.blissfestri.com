@@ -28,4 +28,4 @@ Designed by Erika Flamand (who also designed our website!) and minted and printe
   alt="Blissfest t-shirt mockup"
 />
 
-Alos designed by Erika Flamand we have created a limited set of Blissfest posters on matte card stock.  These posters are 11" x 7".
+Also designed by Erika Flamand we have created a limited set of Blissfest posters on matte card stock.  These posters are 11" x 7".

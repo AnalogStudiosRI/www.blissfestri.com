@@ -4,7 +4,7 @@ template: news
 
 # Blissfest Merch
 
-<span class="publish-date">Published: July XX, 2023</span>
+<span class="publish-date">Published: July 22, 2023</span>
 
 Below are the merchandise options we'll be offering for sale exclusively at this year's Blissfest.  All designs created by [Erika Flamand](https://www.behance.net/eflamand2ddb).
 

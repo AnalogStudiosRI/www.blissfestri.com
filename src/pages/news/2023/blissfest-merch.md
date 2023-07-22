@@ -17,7 +17,7 @@ Below are the merchandise options we'll be offering for sale exclusively at this
   alt="Blissfest t-shirt mockup"
 />
 
-Designed by Erika Flamand (who also designed our website!) and minted and printed by [Mint Printworks](https://mintprintworks.com), this year's Blissfest will be offering shirts for sale!  Featuring a granite colored dye, [this shirt](https://www.ssactivewear.com/p/comfort_colors/1717) is a 100% cotton relaxed fit and will come in a wider variety of sizes!
+Designed by Erika Flamand (who also designed our website!) and minted and printed by our friends at [Mint Printworks](https://mintprintworks.com), this year's Blissfest will be offering shirts for sale!  Featuring a granite colored dye, [this shirt](https://www.ssactivewear.com/p/comfort_colors/1717) is a 100% cotton relaxed fit and will come in a wider variety of sizes!
 
 ## Posters ($ 10)
 

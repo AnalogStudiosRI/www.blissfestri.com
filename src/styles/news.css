@@ -3,7 +3,7 @@
 }
 
 #news h2 {
-  @apply font-secondary text-center text-primary text-4xl;
+  @apply font-secondary text-center text-primary text-4xl mt-16;
 }
 
 #news ul {

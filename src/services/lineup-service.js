@@ -74,7 +74,7 @@ const LINEUP = [{
 }, {
   isOpener: true,
   name: 'Nate Farrar',
-  bio: 'As a long time player and supporter of the Newport arts and music scene, Nate Farrar joins our stage will all original, RI inspired Americana Folk.  Mikel Arambarri will be joining him on lap steel, making for a rare duo performance!',
+  bio: 'As a long time player and supporter of the Newport arts and music scene, Nate Farrar joins our stage with all original, RI inspired Americana Folk.  Mikel Arambarri will be joining him on lap steel, making for a rare duo performance!',
   picture: '/assets/images/lineup/nate-farrar.webp',
   instagram: 'https://www.instagram.com/splinter_hippie',
   startTime: 1690666200000 // 5:30pm

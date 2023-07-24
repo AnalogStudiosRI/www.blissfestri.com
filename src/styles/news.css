@@ -2,6 +2,10 @@
   @apply font-secondary text-center text-primary text-5xl;
 }
 
+#news h2 {
+  @apply font-secondary text-center text-primary text-4xl mt-16;
+}
+
 #news ul {
   @apply mt-4 mb-4 text-center;
 }

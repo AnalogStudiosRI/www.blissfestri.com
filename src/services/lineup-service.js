@@ -74,14 +74,9 @@ const LINEUP = [{
 }, {
   isOpener: true,
   name: 'Nate Farrar',
-  bio: 'With a debut album giving a nod to Mississippi Delta Blues, Nate Farrar\'s music ranges in mood from forlorn to foot-stomping.',
+  bio: 'As a long time player and supporter of the Newport arts and music scene, Nate Farrar joins our stage will all original, RI inspired Americana Folk.  Mikel Arambarri will be joining him on lap steel, making for a rare duo performance!',
   picture: '/assets/images/lineup/nate-farrar.webp',
-  facebook: '',
   instagram: 'https://www.instagram.com/splinter_hippie',
-  website: '',
-  spotify: 'https://open.spotify.com/artist/627JjqozdCkghNVTuxDQc2',
-  youtube: '',
-  apple: 'https://music.apple.com/us/artist/nate-farrar/211003726',
   startTime: 1690666200000 // 5:30pm
 }];
 

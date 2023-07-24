@@ -30,3 +30,5 @@ Minted and printed by our friends at [Mint Printworks](https://mintprintworks.co
 />
 
 In addition to shirts, we will also have a limited set of Blissfest posters on 11" x 17" matte card stock.
+
+_All merchandise is exclusive to Blissfest, so make sure to get [your tickets](/tickets/) for the event!_

@@ -78,8 +78,8 @@ class LineupCard extends HTMLElement {
         </div>
 
         <div class="w-1/2 ml-16 lg:w-2/5">
-          <h3 class="text-2xl md:text-4xl bold font-primary text-primary uppercase">${name}</h3>
-          <span class="font-primary">${bio}</span>
+          <h2 class="text-2xl md:text-4xl bold font-primary text-primary uppercase">${name}</h2>
+          <p class="font-primary">${bio}</p>
           ${getSocialLinksList(name, socials)}
         </div>
       </article>

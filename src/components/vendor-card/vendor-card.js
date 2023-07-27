@@ -30,44 +30,25 @@ function getSocialLinksList(name, socials) {
       </ul>`;
 }
 
-class LineupCard extends HTMLElement {
-  constructor() {
-    super();
-    this.DEFAULT_ROTATION = 'center';
-    this.ROTATION_CLASS_MAPPER = {
-      center: 'rotate-0',
-      left: '-rotate-12',
-      right: 'rotate-12'
-    };
-  }
-
+class VendorCard extends HTMLElement {
   connectedCallback() {
     const name = this.getAttribute('name');
     const bio = this.getAttribute('bio');
     const picture = this.getAttribute('picture');
     const socials = {
-      apple: this.getAttribute('apple'),
       facebook: this.getAttribute('facebook'),
       instagram: this.getAttribute('instagram'),
-      spotify: this.getAttribute('spotify'),
-      youtube: this.getAttribute('youtube'),
       website: this.getAttribute('website')
     };
-    const rotation = this.getAttribute('rotation');
-    const rotationClass = rotation && this.ROTATION_CLASS_MAPPER[rotation]
-      ? this.ROTATION_CLASS_MAPPER[rotation]
-      : this.ROTATION_CLASS_MAPPER[this.DEFAULT_ROTATION];
-    const rotationMargin = rotationClass === this.ROTATION_CLASS_MAPPER[this.DEFAULT_ROTATION]
-      ? 'mt-0'
-      : 'mt-4';
 
     this.innerHTML = `
-      <article class="flex flex-row">
-        <div class="w-1/3">
-          <div class="text-center ${rotationClass} ${rotationMargin}">
+      <h3 class="text-2xl md:text-4xl bold font-primary text-primary text-center uppercase">${name}</h3>
+      <article class="mb-8">
+        <div class="m-auto lg:w-1/2">
+          <div class="text-center m-8">
             <picture>
               <img
-                class="bg-slate-50 ml-4 pb-8 pl-2 pr-2 pt-2 drop-shadow-lg lg:pb-12 lg:pl-4 lg:pr-4 lg:pt-4"
+                class="bg-slate-50 p-4 drop-shadow-lg"
                 src="${picture}"
                 alt="Picture of ${name}"
                 width="500"
@@ -77,14 +58,13 @@ class LineupCard extends HTMLElement {
           </div>
         </div>
 
-        <div class="w-1/2 ml-16 lg:w-2/5">
-          <h3 class="text-2xl md:text-4xl bold font-primary text-primary uppercase">${name}</h3>
-          <span class="font-primary">${bio}</span>
+        <div>
           ${getSocialLinksList(name, socials)}
+          <span class="text-lg">${bio}</span>
         </div>
       </article>
     `;
   }
 }
 
-customElements.define('bf-lineup-card', LineupCard);
+customElements.define('bf-vendor-card', VendorCard);

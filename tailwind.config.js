@@ -1,5 +1,5 @@
 export default {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{html,js,md}'],
   theme: {
     extend: {
       colors: {

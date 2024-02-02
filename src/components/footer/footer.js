@@ -83,6 +83,14 @@ export default class Footer extends HTMLElement {
             title="Blissfest Terms of Use" class="underline"
           >
             Terms of Use</a>
+
+          <span> | </span>
+
+            <a
+              href="/archives/"
+              title="Blissfest Archives" class="underline"
+            >
+              Archives</a>
         </small>
       </footer>
     `;

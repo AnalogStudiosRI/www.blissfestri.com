@@ -8,6 +8,15 @@ export default class Navigation extends HTMLElement {
       }, {
         name: 'About',
         url: '/about/'
+      // }, {
+      //   name: 'Lineup',
+      //   url: '/lineup/'
+      // }, {
+      //   name: 'Tickets',
+      //   url: '/tickets/'
+      // }, {
+      //   name: 'FAQ',
+      //   url: '/faq/'
       }, {
         name: 'News',
         url: '/news/'

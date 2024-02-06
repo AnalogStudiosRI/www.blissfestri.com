@@ -4,7 +4,7 @@ template: news
 
 # Motif Awards Nomination
 
-<span class="publish-date">Published: Feb 3, 2024</span>
+<span class="publish-date">Published: Feb 5, 2024</span>
 
 <img
   src="/assets/images/motif.webp"

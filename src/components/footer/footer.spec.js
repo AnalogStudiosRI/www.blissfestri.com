@@ -20,7 +20,7 @@ describe('Components/Footer', () => {
     it('should have the expected number of links on the page', () => {
       const links = document.querySelectorAll('a');
 
-      expect(links.length).to.equal(6);
+      expect(links.length).to.equal(7);
     });
 
     describe('Social Icon Links', () => {
@@ -69,6 +69,15 @@ describe('Components/Footer', () => {
 
         expect(termsLink.length).to.equal(1);
         expect(termsLink[0].textContent.replace(/ /g, '').replace(/\n/g, '')).to.equal('TermsofUse');
+      });
+    });
+
+    describe('Archives Lins', () => {
+      it('should have the expected archives link', () => {
+        const archives = document.querySelectorAll('[href="/archives/"]');
+
+        expect(archives.length).to.equal(1);
+        expect(archives[0].textContent.replace(/ /g, '').replace(/\n/g, '')).to.equal('Archives');
       });
     });
   });

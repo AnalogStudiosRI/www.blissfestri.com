@@ -1,56 +1,28 @@
 <html>
 
   <head>
-    <script type="module" src="../components/event-details/event-details.js" data-gwd-opt="static"></script>
-    <script type="module" src="../components/ticket-info/ticket-info.js" data-gwd-opt="static"></script>
     <script type="module" src="../components/newsletter-signup/newsletter-signup.js" data-gwd-opt="static"></script>
-    <script type="module" src="../components/lineup-poster/lineup-poster.js" data-gwd-opt="static"></script>
     <script type="module" src="../components/promo-video/promo-video.js" data-gwd-opt="static"></script>
-    <script type="module" src="../components/sponsors-banner/sponsors-banner.js" data-gwd-opt="static"></script>
   </head>
 
   <body>
     <div class="text-left xl:w-full xl:block xl:text-center">
 
-      <a 
-        href="/tickets/"
-        class="block w-full md:w-4/5 mr-auto ml-auto bg-primary rounded-xl p-4 m-2 xl:hidden"
-      >
-        <img 
-          src="/assets/images/get-tickets.webp"
-          alt="Get Tickets stub"
-          class="w-1/3 md:w-1/5 mr-auto ml-auto"
-          height="101"
-          width="200"
-        />
-      </a>
-       
-      <bf-event-details
-        class="block text-center xl:inline-block xl:w-8/12 align-top"
-      >
-      </bf-event-details>
-
-      <bf-ticket-info
-        class="hidden xl:inline-block xl:w-2/12 xl:align-text-bottom"
-      ></bf-ticket-info>
-
       <div class="xl:w-8/12 mr-auto ml-auto">
-        <bf-lineup-poster
-          class="block mt-8"
-        ></bf-lineup-poster>
-
-        <bf-promo-video
-          class="block mt-8"
-        ></bf-promo-video>
-
-        <bf-sponsors-banner
-          class="block mt-8"
-        ></bf-sponsors-banner>
+        <div class="font-primary text-center">
+          <h2 class="text-accent text-4xl">Blissfest 2024 is coming soon!</h2>
+          <p>Subscribe below to get notified of all the latest updates as they become available.</p>
+        </div>
 
         <bf-newsletter-signup
           class="block mt-8"
         ></bf-newsletter-signup>
+
+        <bf-promo-video
+          class="block mt-8"
+        ></bf-promo-video>
       </div>
+
     </div>
   </body>
 

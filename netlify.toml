@@ -8,3 +8,11 @@
 [build.environment]
   NODE_VERSION = "18.12.1"
   TZ = "America/New_York"
+
+# https://docs.netlify.com/routing/redirects/redirect-options/#domain-level-redirects
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/*"
+  to = "https://www.blissri.com/:splat"
+  status = 301
+  force = true
